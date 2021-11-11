@@ -1,0 +1,13 @@
+key.cpp: In function 'int ECDSA_SIG_recover_key_GFp(EC_KEY*, ECDSA_SIG*, const unsigned char*, int, int, int)':
+key.cpp:83:49: error: 'ECDSA_SIG_get0' was not declared in this scope
+     ECDSA_SIG_get0(ecsig, (const BIGNUM **)&s, 0);
+                                                 ^
+key.cpp: In member function 'bool CKey::SignCompact(uint256, std::vector<unsigned char>&)':
+key.cpp:300:65: error: 'ECDSA_SIG_get0' was not declared in this scope
+     ECDSA_SIG_get0(sig, (const BIGNUM **)&r, (const BIGNUM **)&s);
+                                                                 ^
+key.cpp: In member function 'bool CKey::SetCompactSignature(uint256, const std::vector<unsigned char>&)':
+key.cpp:347:65: error: 'ECDSA_SIG_get0' was not declared in this scope
+     ECDSA_SIG_get0(sig, (const BIGNUM **)&r, (const BIGNUM **)&s);
+                                                                 ^
+mingw32-make: *** [obj/key.o] Error 1

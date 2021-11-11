@@ -1,0 +1,3 @@
+../share/genbuild.sh: 2: : not found
+../share/genbuild.sh: 36: Syntax error: end of file unexpected (expecting "then")
+make: *** [makefile.unix:133: obj/build.h] Error 2

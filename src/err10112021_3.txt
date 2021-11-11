@@ -1,0 +1,260 @@
+In file included from C:\deps\ssl\include/openssl/bn.h:20:0,
+                 from bignum.h:11,
+                 from main.h:9,
+                 from db.h:9,
+                 from init.cpp:6:
+C:\deps\boost/boost/asio/ssl/detail/impl/openssl_init.ipp: In constructor 'boost::asio::ssl::detail::openssl_init_base::do_init::do_init()':
+C:\deps\ssl\include/openssl/crypto.h:212:41: error: expected id-expression before '(' token
+ #  define CRYPTO_num_locks()            (1)
+                                         ^
+C:\deps\boost/boost/asio/ssl/detail/impl/openssl_init.ipp:43:23: note: in expansion of macro 'CRYPTO_num_locks'
+     mutexes_.resize(::CRYPTO_num_locks());
+                       ^
+In file included from C:\deps\boost/boost/asio/ssl/detail/openssl_init.hpp:85:0,
+                 from C:\deps\boost/boost/asio/ssl/context.hpp:28,
+                 from C:\deps\boost/boost/asio/ssl.hpp:19,
+                 from bitcoinrpc.h:19,
+                 from init.cpp:8:
+C:\deps\boost/boost/asio/ssl/detail/impl/openssl_init.ipp:46:66: error: expected id-expression before ';' token
+     ::CRYPTO_set_locking_callback(&do_init::openssl_locking_func);
+                                                                  ^
+C:\deps\boost/boost/asio/ssl/detail/impl/openssl_init.ipp:47:56: error: expected id-expression before ';' token
+     ::CRYPTO_set_id_callback(&do_init::openssl_id_func);
+                                                        ^
+C:\deps\boost/boost/asio/ssl/detail/impl/openssl_init.ipp: In destructor 'boost::asio::ssl::detail::openssl_init_base::do_init::~do_init()':
+C:\deps\boost/boost/asio/ssl/detail/impl/openssl_init.ipp:52:32: error: expected id-expression before ';' token
+     ::CRYPTO_set_id_callback(0);
+                                ^
+C:\deps\boost/boost/asio/ssl/detail/impl/openssl_init.ipp:53:37: error: expected id-expression before ';' token
+     ::CRYPTO_set_locking_callback(0);
+                                     ^
+In file included from C:\deps\ssl\include/openssl/engine.h:25:0,
+                 from C:\deps\boost/boost/asio/ssl/detail/openssl_types.hpp:22,
+                 from C:\deps\boost/boost/asio/ssl/context_base.hpp:20,
+                 from C:\deps\boost/boost/asio/ssl/context.hpp:26,
+                 from C:\deps\boost/boost/asio/ssl.hpp:19,
+                 from bitcoinrpc.h:19,
+                 from init.cpp:8:
+C:\deps\ssl\include/openssl/err.h:257:29: error: expected id-expression before 'while'
+ # define ERR_free_strings() while(0) continue
+                             ^
+C:\deps\boost/boost/asio/ssl/detail/impl/openssl_init.ipp:54:7: note: in expansion of macro 'ERR_free_strings'
+     ::ERR_free_strings();
+       ^
+C:\deps\ssl\include/openssl/err.h:257:29: error: expected ';' before 'while'
+ # define ERR_free_strings() while(0) continue
+                             ^
+C:\deps\boost/boost/asio/ssl/detail/impl/openssl_init.ipp:54:7: note: in expansion of macro 'ERR_free_strings'
+     ::ERR_free_strings();
+       ^
+In file included from C:\deps\ssl\include/openssl/x509.h:18:0,
+                 from C:\deps\ssl\include/openssl/ssl.h:20,
+                 from C:\deps\boost/boost/asio/ssl/detail/openssl_types.hpp:20,
+                 from C:\deps\boost/boost/asio/ssl/context_base.hpp:20,
+                 from C:\deps\boost/boost/asio/ssl/context.hpp:26,
+                 from C:\deps\boost/boost/asio/ssl.hpp:19,
+                 from bitcoinrpc.h:19,
+                 from init.cpp:8:
+C:\deps\ssl\include/openssl/evp.h:962:25: error: expected id-expression before 'while'
+ #  define EVP_cleanup() while(0) continue
+                         ^
+C:\deps\boost/boost/asio/ssl/detail/impl/openssl_init.ipp:56:7: note: in expansion of macro 'EVP_cleanup'
+     ::EVP_cleanup();
+       ^
+C:\deps\ssl\include/openssl/evp.h:962:25: error: expected ';' before 'while'
+ #  define EVP_cleanup() while(0) continue
+                         ^
+C:\deps\boost/boost/asio/ssl/detail/impl/openssl_init.ipp:56:7: note: in expansion of macro 'EVP_cleanup'
+     ::EVP_cleanup();
+       ^
+In file included from C:\deps\ssl\include/openssl/bn.h:20:0,
+                 from bignum.h:11,
+                 from main.h:9,
+                 from db.h:9,
+                 from init.cpp:6:
+C:\deps\ssl\include/openssl/crypto.h:200:39: error: expected id-expression before 'while'
+ # define CRYPTO_cleanup_all_ex_data() while(0) continue
+                                       ^
+C:\deps\boost/boost/asio/ssl/detail/impl/openssl_init.ipp:57:7: note: in expansion of macro 'CRYPTO_cleanup_all_ex_data'
+     ::CRYPTO_cleanup_all_ex_data();
+       ^
+C:\deps\ssl\include/openssl/crypto.h:200:39: error: expected ';' before 'while'
+ # define CRYPTO_cleanup_all_ex_data() while(0) continue
+                                       ^
+C:\deps\boost/boost/asio/ssl/detail/impl/openssl_init.ipp:57:7: note: in expansion of macro 'CRYPTO_cleanup_all_ex_data'
+     ::CRYPTO_cleanup_all_ex_data();
+       ^
+In file included from C:\deps\boost/boost/asio/ssl/detail/openssl_types.hpp:22:0,
+                 from C:\deps\boost/boost/asio/ssl/context_base.hpp:20,
+                 from C:\deps\boost/boost/asio/ssl/context.hpp:26,
+                 from C:\deps\boost/boost/asio/ssl.hpp:19,
+                 from bitcoinrpc.h:19,
+                 from init.cpp:8:
+C:\deps\ssl\include/openssl/engine.h:502:27: error: expected id-expression before 'while'
+ # define ENGINE_cleanup() while(0) continue
+                           ^
+C:\deps\boost/boost/asio/ssl/detail/impl/openssl_init.ipp:60:7: note: in expansion of macro 'ENGINE_cleanup'
+     ::ENGINE_cleanup();
+       ^
+C:\deps\ssl\include/openssl/engine.h:502:27: error: expected ';' before 'while'
+ # define ENGINE_cleanup() while(0) continue
+                           ^
+C:\deps\boost/boost/asio/ssl/detail/impl/openssl_init.ipp:60:7: note: in expansion of macro 'ENGINE_cleanup'
+     ::ENGINE_cleanup();
+       ^
+In file included from C:\deps\boost/boost/asio/ssl/context.hpp:530:0,
+                 from C:\deps\boost/boost/asio/ssl.hpp:19,
+                 from bitcoinrpc.h:19,
+                 from init.cpp:8:
+C:\deps\boost/boost/asio/ssl/impl/context.ipp: In constructor 'boost::asio::ssl::context::context(boost::asio::ssl::context_base::method)':
+C:\deps\boost/boost/asio/ssl/impl/context.ipp:51:29: error: '::SSLv2_method' has not been declared
+     handle_ = ::SSL_CTX_new(::SSLv2_method());
+                             ^
+C:\deps\boost/boost/asio/ssl/impl/context.ipp:54:29: error: '::SSLv2_client_method' has not been declared
+     handle_ = ::SSL_CTX_new(::SSLv2_client_method());
+                             ^
+C:\deps\boost/boost/asio/ssl/impl/context.ipp:57:29: error: '::SSLv2_server_method' has not been declared
+     handle_ = ::SSL_CTX_new(::SSLv2_server_method());
+                             ^
+C:\deps\boost/boost/asio/ssl/impl/context.ipp:61:29: error: '::SSLv3_method' has not been declared
+     handle_ = ::SSL_CTX_new(::SSLv3_method());
+                             ^
+C:\deps\boost/boost/asio/ssl/impl/context.ipp:64:29: error: '::SSLv3_client_method' has not been declared
+     handle_ = ::SSL_CTX_new(::SSLv3_client_method());
+                             ^
+C:\deps\boost/boost/asio/ssl/impl/context.ipp:67:29: error: '::SSLv3_server_method' has not been declared
+     handle_ = ::SSL_CTX_new(::SSLv3_server_method());
+                             ^
+C:\deps\boost/boost/asio/ssl/impl/context.ipp: In destructor 'boost::asio::ssl::context::~context()':
+C:\deps\boost/boost/asio/ssl/impl/context.ipp:129:16: error: invalid use of incomplete type 'SSL_CTX {aka struct ssl_ctx_st}'
+     if (handle_->default_passwd_callback_userdata)
+                ^
+In file included from C:\deps\ssl\include/openssl/bn.h:19:0,
+                 from bignum.h:11,
+                 from main.h:9,
+                 from db.h:9,
+                 from init.cpp:6:
+C:\deps\ssl\include/openssl/ossl_typ.h:149:16: error: forward declaration of 'SSL_CTX {aka struct ssl_ctx_st}'
+ typedef struct ssl_ctx_st SSL_CTX;
+                ^
+In file included from C:\deps\boost/boost/asio/ssl/context.hpp:530:0,
+                 from C:\deps\boost/boost/asio/ssl.hpp:19,
+                 from bitcoinrpc.h:19,
+                 from init.cpp:8:
+C:\deps\boost/boost/asio/ssl/impl/context.ipp:133:20: error: invalid use of incomplete type 'SSL_CTX {aka struct ssl_ctx_st}'
+             handle_->default_passwd_callback_userdata);
+                    ^
+In file included from C:\deps\ssl\include/openssl/bn.h:19:0,
+                 from bignum.h:11,
+                 from main.h:9,
+                 from db.h:9,
+                 from init.cpp:6:
+C:\deps\ssl\include/openssl/ossl_typ.h:149:16: error: forward declaration of 'SSL_CTX {aka struct ssl_ctx_st}'
+ typedef struct ssl_ctx_st SSL_CTX;
+                ^
+In file included from C:\deps\boost/boost/asio/ssl/context.hpp:530:0,
+                 from C:\deps\boost/boost/asio/ssl.hpp:19,
+                 from bitcoinrpc.h:19,
+                 from init.cpp:8:
+C:\deps\boost/boost/asio/ssl/impl/context.ipp:135:14: error: invalid use of incomplete type 'SSL_CTX {aka struct ssl_ctx_st}'
+       handle_->default_passwd_callback_userdata = 0;
+              ^
+In file included from C:\deps\ssl\include/openssl/bn.h:19:0,
+                 from bignum.h:11,
+                 from main.h:9,
+                 from db.h:9,
+                 from init.cpp:6:
+C:\deps\ssl\include/openssl/ossl_typ.h:149:16: error: forward declaration of 'SSL_CTX {aka struct ssl_ctx_st}'
+ typedef struct ssl_ctx_st SSL_CTX;
+                ^
+In file included from C:\deps\boost/boost/asio/ssl/context.hpp:530:0,
+                 from C:\deps\boost/boost/asio/ssl.hpp:19,
+                 from bitcoinrpc.h:19,
+                 from init.cpp:8:
+C:\deps\boost/boost/asio/ssl/impl/context.ipp: In member function 'boost::system::error_code boost::asio::ssl::context::do_set_password_callback(boost::asio::ssl::detail::password_callback_base*, boost::system::error_code&)':
+C:\deps\boost/boost/asio/ssl/impl/context.ipp:490:14: error: invalid use of incomplete type 'SSL_CTX {aka struct ssl_ctx_st}'
+   if (handle_->default_passwd_callback_userdata)
+              ^
+In file included from C:\deps\ssl\include/openssl/bn.h:19:0,
+                 from bignum.h:11,
+                 from main.h:9,
+                 from db.h:9,
+                 from init.cpp:6:
+C:\deps\ssl\include/openssl/ossl_typ.h:149:16: error: forward declaration of 'SSL_CTX {aka struct ssl_ctx_st}'
+ typedef struct ssl_ctx_st SSL_CTX;
+                ^
+In file included from C:\deps\boost/boost/asio/ssl/context.hpp:530:0,
+                 from C:\deps\boost/boost/asio/ssl.hpp:19,
+                 from bitcoinrpc.h:19,
+                 from init.cpp:8:
+C:\deps\boost/boost/asio/ssl/impl/context.ipp:492:16: error: invalid use of incomplete type 'SSL_CTX {aka struct ssl_ctx_st}'
+         handle_->default_passwd_callback_userdata);
+                ^
+In file included from C:\deps\ssl\include/openssl/bn.h:19:0,
+                 from bignum.h:11,
+                 from main.h:9,
+                 from db.h:9,
+                 from init.cpp:6:
+C:\deps\ssl\include/openssl/ossl_typ.h:149:16: error: forward declaration of 'SSL_CTX {aka struct ssl_ctx_st}'
+ typedef struct ssl_ctx_st SSL_CTX;
+                ^
+In file included from C:\deps\boost/boost/asio/ssl/context.hpp:530:0,
+                 from C:\deps\boost/boost/asio/ssl.hpp:19,
+                 from bitcoinrpc.h:19,
+                 from init.cpp:8:
+C:\deps\boost/boost/asio/ssl/impl/context.ipp:494:10: error: invalid use of incomplete type 'SSL_CTX {aka struct ssl_ctx_st}'
+   handle_->default_passwd_callback_userdata = callback;
+          ^
+In file included from C:\deps\ssl\include/openssl/bn.h:19:0,
+                 from bignum.h:11,
+                 from main.h:9,
+                 from db.h:9,
+                 from init.cpp:6:
+C:\deps\ssl\include/openssl/ossl_typ.h:149:16: error: forward declaration of 'SSL_CTX {aka struct ssl_ctx_st}'
+ typedef struct ssl_ctx_st SSL_CTX;
+                ^
+In file included from C:\deps\ssl\include/openssl/engine.h:25:0,
+                 from C:\deps\boost/boost/asio/ssl/detail/openssl_types.hpp:22,
+                 from C:\deps\boost/boost/asio/ssl/context_base.hpp:20,
+                 from C:\deps\boost/boost/asio/ssl/context.hpp:26,
+                 from C:\deps\boost/boost/asio/ssl.hpp:19,
+                 from bitcoinrpc.h:19,
+                 from init.cpp:8:
+C:\deps\boost/boost/asio/ssl/detail/impl/engine.ipp: In member function 'const boost::system::error_code& boost::asio::ssl::detail::engine::map_error_code(boost::system::error_code&) const':
+C:\deps\boost/boost/asio/ssl/detail/impl/engine.ipp:198:34: error: 'SSL_R_SHORT_READ' was not declared in this scope
+         ERR_PACK(ERR_LIB_SSL, 0, SSL_R_SHORT_READ),
+                                  ^
+C:\deps\ssl\include/openssl/err.h:141:26: note: in definition of macro 'ERR_PACK'
+         (((unsigned int)(r) & 0xFFF)       ) )
+                          ^
+In file included from C:\deps\boost/boost/asio/ssl/detail/engine.hpp:159:0,
+                 from C:\deps\boost/boost/asio/ssl/detail/handshake_op.hpp:21,
+                 from C:\deps\boost/boost/asio/ssl/stream.hpp:27,
+                 from C:\deps\boost/boost/asio/ssl.hpp:24,
+                 from bitcoinrpc.h:19,
+                 from init.cpp:8:
+C:\deps\boost/boost/asio/ssl/detail/impl/engine.ipp:205:19: error: invalid use of incomplete type 'SSL {aka struct ssl_st}'
+   if (ssl_ && ssl_->version == SSL2_VERSION)
+                   ^
+In file included from C:\deps\ssl\include/openssl/bn.h:19:0,
+                 from bignum.h:11,
+                 from main.h:9,
+                 from db.h:9,
+                 from init.cpp:6:
+C:\deps\ssl\include/openssl/ossl_typ.h:148:16: error: forward declaration of 'SSL {aka struct ssl_st}'
+ typedef struct ssl_st SSL;
+                ^
+In file included from C:\deps\ssl\include/openssl/engine.h:25:0,
+                 from C:\deps\boost/boost/asio/ssl/detail/openssl_types.hpp:22,
+                 from C:\deps\boost/boost/asio/ssl/context_base.hpp:20,
+                 from C:\deps\boost/boost/asio/ssl/context.hpp:26,
+                 from C:\deps\boost/boost/asio/ssl.hpp:19,
+                 from bitcoinrpc.h:19,
+                 from init.cpp:8:
+C:\deps\boost/boost/asio/ssl/detail/impl/engine.ipp:212:34: error: 'SSL_R_SHORT_READ' was not declared in this scope
+         ERR_PACK(ERR_LIB_SSL, 0, SSL_R_SHORT_READ),
+                                  ^
+C:\deps\ssl\include/openssl/err.h:141:26: note: in definition of macro 'ERR_PACK'
+         (((unsigned int)(r) & 0xFFF)       ) )
+                          ^
+mingw32-make: *** [obj/init.o] Error 1

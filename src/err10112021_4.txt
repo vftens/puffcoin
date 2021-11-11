@@ -1,0 +1,1217 @@
+In file included from bignum.h:13,
+                 from main.h:9,
+                 from checkpoints.cpp:11:
+util.h:192:22: warning: invalid suffix on literal; C++11 requires a space between literal and string macro [-Wliteral-suffix]
+  192 |     return strprintf("%"PRI64d, n);
+      |                      ^
+In file included from main.h:10,
+                 from checkpoints.cpp:11:
+net.h:320:20: warning: invalid suffix on literal; C++11 requires a space between literal and string macro [-Wliteral-suffix]
+  320 |             printf("askfor %s   %"PRI64d"\n", inv.ToString().c_str(), nRequestTime);
+      |                    ^
+In file included from checkpoints.cpp:11:
+main.h:374:26: warning: invalid suffix on literal; C++11 requires a space between literal and string macro [-Wliteral-suffix]
+  374 |         return strprintf("CTxOut(nValue=%"PRI64d".%08"PRI64d", scriptPubKey=%s)", nValue / COIN, nValue % COIN, scriptPubKey.ToString().substr(0,30).c_str());
+      |                          ^
+main.h:374:49: warning: invalid suffix on literal; C++11 requires a space between literal and string macro [-Wliteral-suffix]
+  374 |         return strprintf("CTxOut(nValue=%"PRI64d".%08"PRI64d", scriptPubKey=%s)", nValue / COIN, nValue % COIN, scriptPubKey.ToString().substr(0,30).c_str());
+      |                                                 ^
+main.h:1483:17: warning: invalid suffix on literal; C++11 requires a space between literal and string macro [-Wliteral-suffix]
+ 1483 |                 "    nRelayUntil  = %"PRI64d"\n"
+      |                 ^
+main.h:1484:17: warning: invalid suffix on literal; C++11 requires a space between literal and string macro [-Wliteral-suffix]
+ 1484 |                 "    nExpiration  = %"PRI64d"\n"
+      |                 ^
+main.h: In constructor ‘CTxIn::CTxIn(COutPoint, CScript, unsigned int)’:
+main.h:258:21: warning: implicitly-declared ‘CScript& CScript::operator=(const CScript&)’ is deprecated [-Wdeprecated-copy]
+  258 |         scriptSig = scriptSigIn;
+      |                     ^~~~~~~~~~~
+In file included from main.h:12,
+                 from checkpoints.cpp:11:
+script.h:267:5: note: because ‘CScript’ has user-provided ‘CScript::CScript(const CScript&)’
+  267 |     CScript(const CScript& b) : std::vector<unsigned char>(b.begin(), b.end()) { }
+      |     ^~~~~~~
+In file included from checkpoints.cpp:11:
+main.h: In constructor ‘CTxIn::CTxIn(uint256, unsigned int, CScript, unsigned int)’:
+main.h:265:21: warning: implicitly-declared ‘CScript& CScript::operator=(const CScript&)’ is deprecated [-Wdeprecated-copy]
+  265 |         scriptSig = scriptSigIn;
+      |                     ^~~~~~~~~~~
+In file included from main.h:12,
+                 from checkpoints.cpp:11:
+script.h:267:5: note: because ‘CScript’ has user-provided ‘CScript::CScript(const CScript&)’
+  267 |     CScript(const CScript& b) : std::vector<unsigned char>(b.begin(), b.end()) { }
+      |     ^~~~~~~
+In file included from checkpoints.cpp:11:
+main.h: In constructor ‘CTxOut::CTxOut(int64, CScript)’:
+main.h:334:24: warning: implicitly-declared ‘CScript& CScript::operator=(const CScript&)’ is deprecated [-Wdeprecated-copy]
+  334 |         scriptPubKey = scriptPubKeyIn;
+      |                        ^~~~~~~~~~~~~~
+In file included from main.h:12,
+                 from checkpoints.cpp:11:
+script.h:267:5: note: because ‘CScript’ has user-provided ‘CScript::CScript(const CScript&)’
+  267 |     CScript(const CScript& b) : std::vector<unsigned char>(b.begin(), b.end()) { }
+      |     ^~~~~~~
+In file included from netbase.cpp:8:
+util.h:192:22: warning: invalid suffix on literal; C++11 requires a space between literal and string macro [-Wliteral-suffix]
+  192 |     return strprintf("%"PRI64d, n);
+      |                      ^
+In file included from addrman.h:9,
+                 from addrman.cpp:5:
+util.h:192:22: warning: invalid suffix on literal; C++11 requires a space between literal and string macro [-Wliteral-suffix]
+  192 |     return strprintf("%"PRI64d, n);
+      |                      ^
+In file included from key.h:15,
+                 from crypter.h:9,
+                 from crypter.cpp:14:
+util.h:192:22: warning: invalid suffix on literal; C++11 requires a space between literal and string macro [-Wliteral-suffix]
+  192 |     return strprintf("%"PRI64d, n);
+      |                      ^
+In file included from key.h:15,
+                 from key.cpp:11:
+util.h:192:22: warning: invalid suffix on literal; C++11 requires a space between literal and string macro [-Wliteral-suffix]
+  192 |     return strprintf("%"PRI64d, n);
+      |                      ^
+In file included from bignum.h:13,
+                 from main.h:9,
+                 from db.h:9,
+                 from db.cpp:7:
+util.h:192:22: warning: invalid suffix on literal; C++11 requires a space between literal and string macro [-Wliteral-suffix]
+  192 |     return strprintf("%"PRI64d, n);
+      |                      ^
+In file included from main.h:10,
+                 from db.h:9,
+                 from db.cpp:7:
+net.h:320:20: warning: invalid suffix on literal; C++11 requires a space between literal and string macro [-Wliteral-suffix]
+  320 |             printf("askfor %s   %"PRI64d"\n", inv.ToString().c_str(), nRequestTime);
+      |                    ^
+In file included from db.h:9,
+                 from db.cpp:7:
+main.h:374:26: warning: invalid suffix on literal; C++11 requires a space between literal and string macro [-Wliteral-suffix]
+  374 |         return strprintf("CTxOut(nValue=%"PRI64d".%08"PRI64d", scriptPubKey=%s)", nValue / COIN, nValue % COIN, scriptPubKey.ToString().substr(0,30).c_str());
+      |                          ^
+main.h:374:49: warning: invalid suffix on literal; C++11 requires a space between literal and string macro [-Wliteral-suffix]
+  374 |         return strprintf("CTxOut(nValue=%"PRI64d".%08"PRI64d", scriptPubKey=%s)", nValue / COIN, nValue % COIN, scriptPubKey.ToString().substr(0,30).c_str());
+      |                                                 ^
+main.h:1483:17: warning: invalid suffix on literal; C++11 requires a space between literal and string macro [-Wliteral-suffix]
+ 1483 |                 "    nRelayUntil  = %"PRI64d"\n"
+      |                 ^
+main.h:1484:17: warning: invalid suffix on literal; C++11 requires a space between literal and string macro [-Wliteral-suffix]
+ 1484 |                 "    nExpiration  = %"PRI64d"\n"
+      |                 ^
+db.cpp:347:16: warning: invalid suffix on literal; C++11 requires a space between literal and string macro [-Wliteral-suffix]
+  347 |         printf("DBFlush(%s)%s ended %15"PRI64d"ms\n", fShutdown ? "true" : "false", fDbEnvInit ? "" : " db not started", GetTimeMillis() - nStart);
+      |                ^
+In file included from db.h:9,
+                 from db.cpp:7:
+main.h: In constructor ‘CTxIn::CTxIn(COutPoint, CScript, unsigned int)’:
+main.h:258:21: warning: implicitly-declared ‘CScript& CScript::operator=(const CScript&)’ is deprecated [-Wdeprecated-copy]
+  258 |         scriptSig = scriptSigIn;
+      |                     ^~~~~~~~~~~
+In file included from main.h:12,
+                 from db.h:9,
+                 from db.cpp:7:
+script.h:267:5: note: because ‘CScript’ has user-provided ‘CScript::CScript(const CScript&)’
+  267 |     CScript(const CScript& b) : std::vector<unsigned char>(b.begin(), b.end()) { }
+      |     ^~~~~~~
+In file included from db.h:9,
+                 from db.cpp:7:
+main.h: In constructor ‘CTxIn::CTxIn(uint256, unsigned int, CScript, unsigned int)’:
+main.h:265:21: warning: implicitly-declared ‘CScript& CScript::operator=(const CScript&)’ is deprecated [-Wdeprecated-copy]
+  265 |         scriptSig = scriptSigIn;
+      |                     ^~~~~~~~~~~
+In file included from main.h:12,
+                 from db.h:9,
+                 from db.cpp:7:
+script.h:267:5: note: because ‘CScript’ has user-provided ‘CScript::CScript(const CScript&)’
+  267 |     CScript(const CScript& b) : std::vector<unsigned char>(b.begin(), b.end()) { }
+      |     ^~~~~~~
+In file included from db.h:9,
+                 from db.cpp:7:
+main.h: In constructor ‘CTxOut::CTxOut(int64, CScript)’:
+main.h:334:24: warning: implicitly-declared ‘CScript& CScript::operator=(const CScript&)’ is deprecated [-Wdeprecated-copy]
+  334 |         scriptPubKey = scriptPubKeyIn;
+      |                        ^~~~~~~~~~~~~~
+In file included from main.h:12,
+                 from db.h:9,
+                 from db.cpp:7:
+script.h:267:5: note: because ‘CScript’ has user-provided ‘CScript::CScript(const CScript&)’
+  267 |     CScript(const CScript& b) : std::vector<unsigned char>(b.begin(), b.end()) { }
+      |     ^~~~~~~
+In file included from bignum.h:13,
+                 from main.h:9,
+                 from db.h:9,
+                 from init.cpp:6:
+util.h:192:22: warning: invalid suffix on literal; C++11 requires a space between literal and string macro [-Wliteral-suffix]
+  192 |     return strprintf("%"PRI64d, n);
+      |                      ^
+In file included from main.h:10,
+                 from db.h:9,
+                 from init.cpp:6:
+net.h:320:20: warning: invalid suffix on literal; C++11 requires a space between literal and string macro [-Wliteral-suffix]
+  320 |             printf("askfor %s   %"PRI64d"\n", inv.ToString().c_str(), nRequestTime);
+      |                    ^
+In file included from db.h:9,
+                 from init.cpp:6:
+main.h:374:26: warning: invalid suffix on literal; C++11 requires a space between literal and string macro [-Wliteral-suffix]
+  374 |         return strprintf("CTxOut(nValue=%"PRI64d".%08"PRI64d", scriptPubKey=%s)", nValue / COIN, nValue % COIN, scriptPubKey.ToString().substr(0,30).c_str());
+      |                          ^
+main.h:374:49: warning: invalid suffix on literal; C++11 requires a space between literal and string macro [-Wliteral-suffix]
+  374 |         return strprintf("CTxOut(nValue=%"PRI64d".%08"PRI64d", scriptPubKey=%s)", nValue / COIN, nValue % COIN, scriptPubKey.ToString().substr(0,30).c_str());
+      |                                                 ^
+main.h:1483:17: warning: invalid suffix on literal; C++11 requires a space between literal and string macro [-Wliteral-suffix]
+ 1483 |                 "    nRelayUntil  = %"PRI64d"\n"
+      |                 ^
+main.h:1484:17: warning: invalid suffix on literal; C++11 requires a space between literal and string macro [-Wliteral-suffix]
+ 1484 |                 "    nExpiration  = %"PRI64d"\n"
+      |                 ^
+init.cpp:592:12: warning: invalid suffix on literal; C++11 requires a space between literal and string macro [-Wliteral-suffix]
+  592 |     printf(" block index %15"PRI64d"ms\n", GetTimeMillis() - nStart);
+      |            ^
+init.cpp:703:12: warning: invalid suffix on literal; C++11 requires a space between literal and string macro [-Wliteral-suffix]
+  703 |     printf(" wallet      %15"PRI64d"ms\n", GetTimeMillis() - nStart);
+      |            ^
+init.cpp:723:16: warning: invalid suffix on literal; C++11 requires a space between literal and string macro [-Wliteral-suffix]
+  723 |         printf(" rescan      %15"PRI64d"ms\n", GetTimeMillis() - nStart);
+      |                ^
+init.cpp:750:12: warning: invalid suffix on literal; C++11 requires a space between literal and string macro [-Wliteral-suffix]
+  750 |     printf("Loaded %i addresses from peers.dat  %"PRI64d"ms\n",
+      |            ^
+In file included from db.h:9,
+                 from init.cpp:6:
+main.h: In constructor ‘CTxIn::CTxIn(COutPoint, CScript, unsigned int)’:
+main.h:258:21: warning: implicitly-declared ‘CScript& CScript::operator=(const CScript&)’ is deprecated [-Wdeprecated-copy]
+  258 |         scriptSig = scriptSigIn;
+      |                     ^~~~~~~~~~~
+In file included from main.h:12,
+                 from db.h:9,
+                 from init.cpp:6:
+script.h:267:5: note: because ‘CScript’ has user-provided ‘CScript::CScript(const CScript&)’
+  267 |     CScript(const CScript& b) : std::vector<unsigned char>(b.begin(), b.end()) { }
+      |     ^~~~~~~
+In file included from db.h:9,
+                 from init.cpp:6:
+main.h: In constructor ‘CTxIn::CTxIn(uint256, unsigned int, CScript, unsigned int)’:
+main.h:265:21: warning: implicitly-declared ‘CScript& CScript::operator=(const CScript&)’ is deprecated [-Wdeprecated-copy]
+  265 |         scriptSig = scriptSigIn;
+      |                     ^~~~~~~~~~~
+In file included from main.h:12,
+                 from db.h:9,
+                 from init.cpp:6:
+script.h:267:5: note: because ‘CScript’ has user-provided ‘CScript::CScript(const CScript&)’
+  267 |     CScript(const CScript& b) : std::vector<unsigned char>(b.begin(), b.end()) { }
+      |     ^~~~~~~
+In file included from db.h:9,
+                 from init.cpp:6:
+main.h: In constructor ‘CTxOut::CTxOut(int64, CScript)’:
+main.h:334:24: warning: implicitly-declared ‘CScript& CScript::operator=(const CScript&)’ is deprecated [-Wdeprecated-copy]
+  334 |         scriptPubKey = scriptPubKeyIn;
+      |                        ^~~~~~~~~~~~~~
+In file included from main.h:12,
+                 from db.h:9,
+                 from init.cpp:6:
+script.h:267:5: note: because ‘CScript’ has user-provided ‘CScript::CScript(const CScript&)’
+  267 |     CScript(const CScript& b) : std::vector<unsigned char>(b.begin(), b.end()) { }
+      |     ^~~~~~~
+In file included from bitcoinrpc.h:15,
+                 from init.cpp:8:
+json/json_spirit_writer_template.h: In function ‘String_type json_spirit::non_printable_to_string(unsigned int)’:
+json/json_spirit_writer_template.h:31:50: warning: typedef ‘Char_type’ locally defined but not used [-Wunused-local-typedefs]
+   31 |         typedef typename String_type::value_type Char_type;
+      |                                                  ^~~~~~~~~
+In file included from addrman.h:9,
+                 from net.h:21,
+                 from irc.cpp:8:
+util.h:192:22: warning: invalid suffix on literal; C++11 requires a space between literal and string macro [-Wliteral-suffix]
+  192 |     return strprintf("%"PRI64d, n);
+      |                      ^
+In file included from irc.cpp:8:
+net.h:320:20: warning: invalid suffix on literal; C++11 requires a space between literal and string macro [-Wliteral-suffix]
+  320 |             printf("askfor %s   %"PRI64d"\n", inv.ToString().c_str(), nRequestTime);
+      |                    ^
+In file included from key.h:15,
+                 from crypter.h:9,
+                 from keystore.h:9,
+                 from keystore.cpp:7:
+util.h:192:22: warning: invalid suffix on literal; C++11 requires a space between literal and string macro [-Wliteral-suffix]
+  192 |     return strprintf("%"PRI64d, n);
+      |                      ^
+keystore.cpp: In member function ‘virtual bool CBasicKeyStore::AddCScript(const CScript&)’:
+keystore.cpp:34:44: warning: implicitly-declared ‘CScript& CScript::operator=(const CScript&)’ is deprecated [-Wdeprecated-copy]
+   34 |         mapScripts[redeemScript.GetID()] = redeemScript;
+      |                                            ^~~~~~~~~~~~
+In file included from keystore.cpp:8:
+script.h:267:5: note: because ‘CScript’ has user-provided ‘CScript::CScript(const CScript&)’
+  267 |     CScript(const CScript& b) : std::vector<unsigned char>(b.begin(), b.end()) { }
+      |     ^~~~~~~
+keystore.cpp: In member function ‘virtual bool CBasicKeyStore::GetCScript(const CScriptID&, CScript&) const’:
+keystore.cpp:57:37: warning: implicitly-declared ‘CScript& CScript::operator=(const CScript&)’ is deprecated [-Wdeprecated-copy]
+   57 |             redeemScriptOut = (*mi).second;
+      |                                     ^~~~~~
+In file included from keystore.cpp:8:
+script.h:267:5: note: because ‘CScript’ has user-provided ‘CScript::CScript(const CScript&)’
+  267 |     CScript(const CScript& b) : std::vector<unsigned char>(b.begin(), b.end()) { }
+      |     ^~~~~~~
+In file included from bignum.h:13,
+                 from main.h:9,
+                 from db.h:9,
+                 from main.cpp:8:
+util.h:192:22: warning: invalid suffix on literal; C++11 requires a space between literal and string macro [-Wliteral-suffix]
+  192 |     return strprintf("%"PRI64d, n);
+      |                      ^
+In file included from main.h:10,
+                 from db.h:9,
+                 from main.cpp:8:
+net.h:320:20: warning: invalid suffix on literal; C++11 requires a space between literal and string macro [-Wliteral-suffix]
+  320 |             printf("askfor %s   %"PRI64d"\n", inv.ToString().c_str(), nRequestTime);
+      |                    ^
+In file included from db.h:9,
+                 from main.cpp:8:
+main.h:374:26: warning: invalid suffix on literal; C++11 requires a space between literal and string macro [-Wliteral-suffix]
+  374 |         return strprintf("CTxOut(nValue=%"PRI64d".%08"PRI64d", scriptPubKey=%s)", nValue / COIN, nValue % COIN, scriptPubKey.ToString().substr(0,30).c_str());
+      |                          ^
+main.h:374:49: warning: invalid suffix on literal; C++11 requires a space between literal and string macro [-Wliteral-suffix]
+  374 |         return strprintf("CTxOut(nValue=%"PRI64d".%08"PRI64d", scriptPubKey=%s)", nValue / COIN, nValue % COIN, scriptPubKey.ToString().substr(0,30).c_str());
+      |                                                 ^
+main.h:1483:17: warning: invalid suffix on literal; C++11 requires a space between literal and string macro [-Wliteral-suffix]
+ 1483 |                 "    nRelayUntil  = %"PRI64d"\n"
+      |                 ^
+main.h:1484:17: warning: invalid suffix on literal; C++11 requires a space between literal and string macro [-Wliteral-suffix]
+ 1484 |                 "    nExpiration  = %"PRI64d"\n"
+      |                 ^
+main.cpp:923:12: warning: invalid suffix on literal; C++11 requires a space between literal and string macro [-Wliteral-suffix]
+  923 |     printf("  nActualTimespan = %"PRI64d"  before bounds\n", nActualTimespan);
+      |            ^
+main.cpp:940:12: warning: invalid suffix on literal; C++11 requires a space between literal and string macro [-Wliteral-suffix]
+  940 |     printf("nTargetTimespan = %"PRI64d"    nActualTimespan = %"PRI64d"\n", nTargetTimespan, nActualTimespan);
+      |            ^
+main.cpp:940:39: warning: invalid suffix on literal; C++11 requires a space between literal and string macro [-Wliteral-suffix]
+  940 |     printf("nTargetTimespan = %"PRI64d"    nActualTimespan = %"PRI64d"\n", nTargetTimespan, nActualTimespan);
+      |                                       ^
+main.cpp:3430:28: warning: invalid suffix on literal; C++11 requires a space between literal and string macro [-Wliteral-suffix]
+ 3430 |                     printf("priority     nValueIn=%-12"PRI64d" nConf=%-5d dPriority=%-20.1f\n", nValueIn, nConf, dPriority);
+      |                            ^
+In file included from db.h:9,
+                 from main.cpp:8:
+main.h: In constructor ‘CTxIn::CTxIn(COutPoint, CScript, unsigned int)’:
+main.h:258:21: warning: implicitly-declared ‘CScript& CScript::operator=(const CScript&)’ is deprecated [-Wdeprecated-copy]
+  258 |         scriptSig = scriptSigIn;
+      |                     ^~~~~~~~~~~
+In file included from main.h:12,
+                 from db.h:9,
+                 from main.cpp:8:
+script.h:267:5: note: because ‘CScript’ has user-provided ‘CScript::CScript(const CScript&)’
+  267 |     CScript(const CScript& b) : std::vector<unsigned char>(b.begin(), b.end()) { }
+      |     ^~~~~~~
+In file included from db.h:9,
+                 from main.cpp:8:
+main.h: In constructor ‘CTxIn::CTxIn(uint256, unsigned int, CScript, unsigned int)’:
+main.h:265:21: warning: implicitly-declared ‘CScript& CScript::operator=(const CScript&)’ is deprecated [-Wdeprecated-copy]
+  265 |         scriptSig = scriptSigIn;
+      |                     ^~~~~~~~~~~
+In file included from main.h:12,
+                 from db.h:9,
+                 from main.cpp:8:
+script.h:267:5: note: because ‘CScript’ has user-provided ‘CScript::CScript(const CScript&)’
+  267 |     CScript(const CScript& b) : std::vector<unsigned char>(b.begin(), b.end()) { }
+      |     ^~~~~~~
+In file included from db.h:9,
+                 from main.cpp:8:
+main.h: In constructor ‘CTxOut::CTxOut(int64, CScript)’:
+main.h:334:24: warning: implicitly-declared ‘CScript& CScript::operator=(const CScript&)’ is deprecated [-Wdeprecated-copy]
+  334 |         scriptPubKey = scriptPubKeyIn;
+      |                        ^~~~~~~~~~~~~~
+In file included from main.h:12,
+                 from db.h:9,
+                 from main.cpp:8:
+script.h:267:5: note: because ‘CScript’ has user-provided ‘CScript::CScript(const CScript&)’
+  267 |     CScript(const CScript& b) : std::vector<unsigned char>(b.begin(), b.end()) { }
+      |     ^~~~~~~
+main.cpp: In function ‘bool LoadBlockIndex(bool)’:
+main.cpp:2009:189: warning: implicitly-declared ‘CScript& CScript::operator=(const CScript&)’ is deprecated [-Wdeprecated-copy]
+ 2009 |         txNew.vin[0].scriptSig = CScript() << 486604799 << CBigNum(4) << vector<unsigned char>((const unsigned char*)pszTimestamp, (const unsigned char*)pszTimestamp + strlen(pszTimestamp));
+      |                                                                                                                                                                                             ^
+In file included from main.h:12,
+                 from db.h:9,
+                 from main.cpp:8:
+script.h:267:5: note: because ‘CScript’ has user-provided ‘CScript::CScript(const CScript&)’
+  267 |     CScript(const CScript& b) : std::vector<unsigned char>(b.begin(), b.end()) { }
+      |     ^~~~~~~
+main.cpp:2011:58: warning: implicitly-declared ‘CScript& CScript::operator=(const CScript&)’ is deprecated [-Wdeprecated-copy]
+ 2011 |         txNew.vout[0].scriptPubKey = CScript() << 0x0 << OP_CHECKSIG; // a privkey for that 'vanity' pubkey would be interesting ;)
+      |                                                          ^~~~~~~~~~~
+In file included from main.h:12,
+                 from db.h:9,
+                 from main.cpp:8:
+script.h:267:5: note: because ‘CScript’ has user-provided ‘CScript::CScript(const CScript&)’
+  267 |     CScript(const CScript& b) : std::vector<unsigned char>(b.begin(), b.end()) { }
+      |     ^~~~~~~
+main.cpp: In function ‘CBlock* CreateNewBlock(CReserveKey&)’:
+main.cpp:3372:5: warning: ‘template<class> class std::auto_ptr’ is deprecated [-Wdeprecated-declarations]
+ 3372 |     auto_ptr<CBlock> pblock(new CBlock());
+      |     ^~~~~~~~
+In file included from /usr/include/c++/9/memory:80,
+                 from /usr/include/boost/system/detail/std_interoperability.hpp:12,
+                 from /usr/include/boost/system/error_code.hpp:959,
+                 from /usr/include/boost/system/system_error.hpp:11,
+                 from /usr/include/boost/thread/exceptions.hpp:22,
+                 from /usr/include/boost/thread/pthread/thread_data.hpp:10,
+                 from /usr/include/boost/thread/thread_only.hpp:17,
+                 from /usr/include/boost/thread/thread.hpp:12,
+                 from /usr/include/boost/thread.hpp:13,
+                 from util.h:22,
+                 from bignum.h:13,
+                 from main.h:9,
+                 from db.h:9,
+                 from main.cpp:8:
+/usr/include/c++/9/bits/unique_ptr.h:53:28: note: declared here
+   53 |   template<typename> class auto_ptr;
+      |                            ^~~~~~~~
+main.cpp: In function ‘void IncrementExtraNonce(CBlock*, CBlockIndex*, unsigned int&)’:
+main.cpp:3549:94: warning: implicitly-declared ‘CScript& CScript::operator=(const CScript&)’ is deprecated [-Wdeprecated-copy]
+ 3549 |     pblock->vtx[0].vin[0].scriptSig = (CScript() << pblock->nTime << CBigNum(nExtraNonce)) + COINBASE_FLAGS;
+      |                                                                                              ^~~~~~~~~~~~~~
+In file included from main.h:12,
+                 from db.h:9,
+                 from main.cpp:8:
+script.h:267:5: note: because ‘CScript’ has user-provided ‘CScript::CScript(const CScript&)’
+  267 |     CScript(const CScript& b) : std::vector<unsigned char>(b.begin(), b.end()) { }
+      |     ^~~~~~~
+main.cpp: In function ‘void FormatHashBuffers(CBlock*, char*, char*, char*)’:
+main.cpp:3578:32: warning: ‘void* memset(void*, int, size_t)’ clearing an object of non-trivial type ‘struct FormatHashBuffers(CBlock*, char*, char*, char*)::<unnamed>’; use assignment or value-initialization instead [-Wclass-memaccess]
+ 3578 |     memset(&tmp, 0, sizeof(tmp));
+      |                                ^
+main.cpp:3562:5: note: ‘struct FormatHashBuffers(CBlock*, char*, char*, char*)::<unnamed>’ declared here
+ 3562 |     {
+      |     ^
+main.cpp: In function ‘void BitcoinMiner(CWallet*)’:
+main.cpp:3677:9: warning: ‘template<class> class std::auto_ptr’ is deprecated [-Wdeprecated-declarations]
+ 3677 |         auto_ptr<CBlock> pblock(CreateNewBlock(reservekey));
+      |         ^~~~~~~~
+In file included from /usr/include/c++/9/memory:80,
+                 from /usr/include/boost/system/detail/std_interoperability.hpp:12,
+                 from /usr/include/boost/system/error_code.hpp:959,
+                 from /usr/include/boost/system/system_error.hpp:11,
+                 from /usr/include/boost/thread/exceptions.hpp:22,
+                 from /usr/include/boost/thread/pthread/thread_data.hpp:10,
+                 from /usr/include/boost/thread/thread_only.hpp:17,
+                 from /usr/include/boost/thread/thread.hpp:12,
+                 from /usr/include/boost/thread.hpp:13,
+                 from util.h:22,
+                 from bignum.h:13,
+                 from main.h:9,
+                 from db.h:9,
+                 from main.cpp:8:
+/usr/include/c++/9/bits/unique_ptr.h:53:28: note: declared here
+   53 |   template<typename> class auto_ptr;
+      |                            ^~~~~~~~
+In file included from db.h:9,
+                 from main.cpp:8:
+main.h: In instantiation of ‘static _OI std::__copy_move<false, false, std::random_access_iterator_tag>::__copy_m(_II, _II, _OI) [with _II = const CTxIn*; _OI = CTxIn*]’:
+/usr/include/c++/9/bits/stl_algobase.h:404:30:   required from ‘_OI std::__copy_move_a(_II, _II, _OI) [with bool _IsMove = false; _II = const CTxIn*; _OI = CTxIn*]’
+/usr/include/c++/9/bits/stl_algobase.h:441:30:   required from ‘_OI std::__copy_move_a2(_II, _II, _OI) [with bool _IsMove = false; _II = __gnu_cxx::__normal_iterator<const CTxIn*, std::vector<CTxIn> >; _OI = __gnu_cxx::__normal_iterator<CTxIn*, std::vector<CTxIn> >]’
+/usr/include/c++/9/bits/stl_algobase.h:474:7:   required from ‘_OI std::copy(_II, _II, _OI) [with _II = __gnu_cxx::__normal_iterator<const CTxIn*, std::vector<CTxIn> >; _OI = __gnu_cxx::__normal_iterator<CTxIn*, std::vector<CTxIn> >]’
+/usr/include/c++/9/bits/vector.tcc:238:31:   required from ‘std::vector<_Tp, _Alloc>& std::vector<_Tp, _Alloc>::operator=(const std::vector<_Tp, _Alloc>&) [with _Tp = CTxIn; _Alloc = std::allocator<CTxIn>]’
+main.h:398:7:   required from here
+main.h:243:7: warning: implicitly-declared ‘CScript& CScript::operator=(const CScript&)’ is deprecated [-Wdeprecated-copy]
+  243 | class CTxIn
+      |       ^~~~~
+In file included from main.h:12,
+                 from db.h:9,
+                 from main.cpp:8:
+script.h:267:5: note: because ‘CScript’ has user-provided ‘CScript::CScript(const CScript&)’
+  267 |     CScript(const CScript& b) : std::vector<unsigned char>(b.begin(), b.end()) { }
+      |     ^~~~~~~
+In file included from /usr/include/c++/9/bits/stl_tree.h:63,
+                 from /usr/include/c++/9/map:60,
+                 from checkpoints.h:8,
+                 from main.cpp:7:
+/usr/include/c++/9/bits/stl_algobase.h:342:18: note: synthesized method ‘CTxIn& CTxIn::operator=(const CTxIn&)’ first required here
+  342 |        *__result = *__first;
+      |        ~~~~~~~~~~^~~~~~~~~~
+In file included from db.h:9,
+                 from main.cpp:8:
+main.h: In instantiation of ‘static _OI std::__copy_move<false, false, std::random_access_iterator_tag>::__copy_m(_II, _II, _OI) [with _II = const CTxOut*; _OI = CTxOut*]’:
+/usr/include/c++/9/bits/stl_algobase.h:404:30:   required from ‘_OI std::__copy_move_a(_II, _II, _OI) [with bool _IsMove = false; _II = const CTxOut*; _OI = CTxOut*]’
+/usr/include/c++/9/bits/stl_algobase.h:441:30:   required from ‘_OI std::__copy_move_a2(_II, _II, _OI) [with bool _IsMove = false; _II = __gnu_cxx::__normal_iterator<const CTxOut*, std::vector<CTxOut> >; _OI = __gnu_cxx::__normal_iterator<CTxOut*, std::vector<CTxOut> >]’
+/usr/include/c++/9/bits/stl_algobase.h:474:7:   required from ‘_OI std::copy(_II, _II, _OI) [with _II = __gnu_cxx::__normal_iterator<const CTxOut*, std::vector<CTxOut> >; _OI = __gnu_cxx::__normal_iterator<CTxOut*, std::vector<CTxOut> >]’
+/usr/include/c++/9/bits/vector.tcc:238:31:   required from ‘std::vector<_Tp, _Alloc>& std::vector<_Tp, _Alloc>::operator=(const std::vector<_Tp, _Alloc>&) [with _Tp = CTxOut; _Alloc = std::allocator<CTxOut>]’
+main.h:398:7:   required from here
+main.h:320:7: warning: implicitly-declared ‘CScript& CScript::operator=(const CScript&)’ is deprecated [-Wdeprecated-copy]
+  320 | class CTxOut
+      |       ^~~~~~
+In file included from main.h:12,
+                 from db.h:9,
+                 from main.cpp:8:
+script.h:267:5: note: because ‘CScript’ has user-provided ‘CScript::CScript(const CScript&)’
+  267 |     CScript(const CScript& b) : std::vector<unsigned char>(b.begin(), b.end()) { }
+      |     ^~~~~~~
+In file included from /usr/include/c++/9/bits/stl_tree.h:63,
+                 from /usr/include/c++/9/map:60,
+                 from checkpoints.h:8,
+                 from main.cpp:7:
+/usr/include/c++/9/bits/stl_algobase.h:342:18: note: synthesized method ‘CTxOut& CTxOut::operator=(const CTxOut&)’ first required here
+  342 |        *__result = *__first;
+      |        ~~~~~~~~~~^~~~~~~~~~
+main.cpp: At global scope:
+main.cpp:3315:21: warning: ‘unsigned int ScanHash_CryptoPP(char*, char*, char*, char*, unsigned int&)’ defined but not used [-Wunused-function]
+ 3315 | unsigned int static ScanHash_CryptoPP(char* pmidstate, char* pdata, char* phash1, char* phash, unsigned int& nHashesDone)
+      |                     ^~~~~~~~~~~~~~~~~
+In file included from bignum.h:13,
+                 from main.h:9,
+                 from db.h:9,
+                 from net.cpp:8:
+util.h:192:22: warning: invalid suffix on literal; C++11 requires a space between literal and string macro [-Wliteral-suffix]
+  192 |     return strprintf("%"PRI64d, n);
+      |                      ^
+In file included from main.h:10,
+                 from db.h:9,
+                 from net.cpp:8:
+net.h:320:20: warning: invalid suffix on literal; C++11 requires a space between literal and string macro [-Wliteral-suffix]
+  320 |             printf("askfor %s   %"PRI64d"\n", inv.ToString().c_str(), nRequestTime);
+      |                    ^
+In file included from db.h:9,
+                 from net.cpp:8:
+main.h:374:26: warning: invalid suffix on literal; C++11 requires a space between literal and string macro [-Wliteral-suffix]
+  374 |         return strprintf("CTxOut(nValue=%"PRI64d".%08"PRI64d", scriptPubKey=%s)", nValue / COIN, nValue % COIN, scriptPubKey.ToString().substr(0,30).c_str());
+      |                          ^
+main.h:374:49: warning: invalid suffix on literal; C++11 requires a space between literal and string macro [-Wliteral-suffix]
+  374 |         return strprintf("CTxOut(nValue=%"PRI64d".%08"PRI64d", scriptPubKey=%s)", nValue / COIN, nValue % COIN, scriptPubKey.ToString().substr(0,30).c_str());
+      |                                                 ^
+main.h:1483:17: warning: invalid suffix on literal; C++11 requires a space between literal and string macro [-Wliteral-suffix]
+ 1483 |                 "    nRelayUntil  = %"PRI64d"\n"
+      |                 ^
+main.h:1484:17: warning: invalid suffix on literal; C++11 requires a space between literal and string macro [-Wliteral-suffix]
+ 1484 |                 "    nExpiration  = %"PRI64d"\n"
+      |                 ^
+net.cpp:1083:12: warning: invalid suffix on literal; C++11 requires a space between literal and string macro [-Wliteral-suffix]
+ 1083 |     printf("Flushed %d addresses to peers.dat  %"PRI64d"ms\n",
+      |            ^
+In file included from db.h:9,
+                 from net.cpp:8:
+main.h: In constructor ‘CTxIn::CTxIn(COutPoint, CScript, unsigned int)’:
+main.h:258:21: warning: implicitly-declared ‘CScript& CScript::operator=(const CScript&)’ is deprecated [-Wdeprecated-copy]
+  258 |         scriptSig = scriptSigIn;
+      |                     ^~~~~~~~~~~
+In file included from main.h:12,
+                 from db.h:9,
+                 from net.cpp:8:
+script.h:267:5: note: because ‘CScript’ has user-provided ‘CScript::CScript(const CScript&)’
+  267 |     CScript(const CScript& b) : std::vector<unsigned char>(b.begin(), b.end()) { }
+      |     ^~~~~~~
+In file included from db.h:9,
+                 from net.cpp:8:
+main.h: In constructor ‘CTxIn::CTxIn(uint256, unsigned int, CScript, unsigned int)’:
+main.h:265:21: warning: implicitly-declared ‘CScript& CScript::operator=(const CScript&)’ is deprecated [-Wdeprecated-copy]
+  265 |         scriptSig = scriptSigIn;
+      |                     ^~~~~~~~~~~
+In file included from main.h:12,
+                 from db.h:9,
+                 from net.cpp:8:
+script.h:267:5: note: because ‘CScript’ has user-provided ‘CScript::CScript(const CScript&)’
+  267 |     CScript(const CScript& b) : std::vector<unsigned char>(b.begin(), b.end()) { }
+      |     ^~~~~~~
+In file included from db.h:9,
+                 from net.cpp:8:
+main.h: In constructor ‘CTxOut::CTxOut(int64, CScript)’:
+main.h:334:24: warning: implicitly-declared ‘CScript& CScript::operator=(const CScript&)’ is deprecated [-Wdeprecated-copy]
+  334 |         scriptPubKey = scriptPubKeyIn;
+      |                        ^~~~~~~~~~~~~~
+In file included from main.h:12,
+                 from db.h:9,
+                 from net.cpp:8:
+script.h:267:5: note: because ‘CScript’ has user-provided ‘CScript::CScript(const CScript&)’
+  267 |     CScript(const CScript& b) : std::vector<unsigned char>(b.begin(), b.end()) { }
+      |     ^~~~~~~
+In file included from protocol.cpp:8:
+util.h:192:22: warning: invalid suffix on literal; C++11 requires a space between literal and string macro [-Wliteral-suffix]
+  192 |     return strprintf("%"PRI64d, n);
+      |                      ^
+In file included from /usr/include/string.h:495,
+                 from /usr/include/c++/9/cstring:42,
+                 from serialize.h:15,
+                 from protocol.h:14,
+                 from protocol.cpp:7:
+In function ‘char* strncpy(char*, const char*, size_t)’,
+    inlined from ‘CMessageHeader::CMessageHeader(const char*, unsigned int)’ at protocol.cpp:34:12:
+/usr/include/x86_64-linux-gnu/bits/string_fortified.h:106:34: warning: ‘char* __builtin_strncpy(char*, const char*, long unsigned int)’ specified bound 12 equals destination size [-Wstringop-truncation]
+  106 |   return __builtin___strncpy_chk (__dest, __src, __len, __bos (__dest));
+      |          ~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+In file included from bignum.h:13,
+                 from main.h:9,
+                 from bitcoinrpc.cpp:8:
+util.h:192:22: warning: invalid suffix on literal; C++11 requires a space between literal and string macro [-Wliteral-suffix]
+  192 |     return strprintf("%"PRI64d, n);
+      |                      ^
+In file included from main.h:10,
+                 from bitcoinrpc.cpp:8:
+net.h:320:20: warning: invalid suffix on literal; C++11 requires a space between literal and string macro [-Wliteral-suffix]
+  320 |             printf("askfor %s   %"PRI64d"\n", inv.ToString().c_str(), nRequestTime);
+      |                    ^
+In file included from bitcoinrpc.cpp:8:
+main.h:374:26: warning: invalid suffix on literal; C++11 requires a space between literal and string macro [-Wliteral-suffix]
+  374 |         return strprintf("CTxOut(nValue=%"PRI64d".%08"PRI64d", scriptPubKey=%s)", nValue / COIN, nValue % COIN, scriptPubKey.ToString().substr(0,30).c_str());
+      |                          ^
+main.h:374:49: warning: invalid suffix on literal; C++11 requires a space between literal and string macro [-Wliteral-suffix]
+  374 |         return strprintf("CTxOut(nValue=%"PRI64d".%08"PRI64d", scriptPubKey=%s)", nValue / COIN, nValue % COIN, scriptPubKey.ToString().substr(0,30).c_str());
+      |                                                 ^
+main.h:1483:17: warning: invalid suffix on literal; C++11 requires a space between literal and string macro [-Wliteral-suffix]
+ 1483 |                 "    nRelayUntil  = %"PRI64d"\n"
+      |                 ^
+main.h:1484:17: warning: invalid suffix on literal; C++11 requires a space between literal and string macro [-Wliteral-suffix]
+ 1484 |                 "    nExpiration  = %"PRI64d"\n"
+      |                 ^
+In file included from bitcoinrpc.cpp:8:
+main.h: In constructor ‘CTxIn::CTxIn(COutPoint, CScript, unsigned int)’:
+main.h:258:21: warning: implicitly-declared ‘CScript& CScript::operator=(const CScript&)’ is deprecated [-Wdeprecated-copy]
+  258 |         scriptSig = scriptSigIn;
+      |                     ^~~~~~~~~~~
+In file included from main.h:12,
+                 from bitcoinrpc.cpp:8:
+script.h:267:5: note: because ‘CScript’ has user-provided ‘CScript::CScript(const CScript&)’
+  267 |     CScript(const CScript& b) : std::vector<unsigned char>(b.begin(), b.end()) { }
+      |     ^~~~~~~
+In file included from bitcoinrpc.cpp:8:
+main.h: In constructor ‘CTxIn::CTxIn(uint256, unsigned int, CScript, unsigned int)’:
+main.h:265:21: warning: implicitly-declared ‘CScript& CScript::operator=(const CScript&)’ is deprecated [-Wdeprecated-copy]
+  265 |         scriptSig = scriptSigIn;
+      |                     ^~~~~~~~~~~
+In file included from main.h:12,
+                 from bitcoinrpc.cpp:8:
+script.h:267:5: note: because ‘CScript’ has user-provided ‘CScript::CScript(const CScript&)’
+  267 |     CScript(const CScript& b) : std::vector<unsigned char>(b.begin(), b.end()) { }
+      |     ^~~~~~~
+In file included from bitcoinrpc.cpp:8:
+main.h: In constructor ‘CTxOut::CTxOut(int64, CScript)’:
+main.h:334:24: warning: implicitly-declared ‘CScript& CScript::operator=(const CScript&)’ is deprecated [-Wdeprecated-copy]
+  334 |         scriptPubKey = scriptPubKeyIn;
+      |                        ^~~~~~~~~~~~~~
+In file included from main.h:12,
+                 from bitcoinrpc.cpp:8:
+script.h:267:5: note: because ‘CScript’ has user-provided ‘CScript::CScript(const CScript&)’
+  267 |     CScript(const CScript& b) : std::vector<unsigned char>(b.begin(), b.end()) { }
+      |     ^~~~~~~
+In file included from bitcoinrpc.h:15,
+                 from bitcoinrpc.cpp:16:
+json/json_spirit_writer_template.h: In function ‘String_type json_spirit::non_printable_to_string(unsigned int)’:
+json/json_spirit_writer_template.h:31:50: warning: typedef ‘Char_type’ locally defined but not used [-Wunused-local-typedefs]
+   31 |         typedef typename String_type::value_type Char_type;
+      |                                                  ^~~~~~~~~
+bitcoinrpc.cpp: In function ‘json_spirit::Value getworkex(const Array&, bool)’:
+bitcoinrpc.cpp:1984:82: warning: implicitly-declared ‘CScript& CScript::operator=(const CScript&)’ is deprecated [-Wdeprecated-copy]
+ 1984 |             pblock->vtx[0].vin[0].scriptSig = mapNewBlock[pdata->hashMerkleRoot].second;
+      |                                                                                  ^~~~~~
+In file included from main.h:12,
+                 from bitcoinrpc.cpp:8:
+script.h:267:5: note: because ‘CScript’ has user-provided ‘CScript::CScript(const CScript&)’
+  267 |     CScript(const CScript& b) : std::vector<unsigned char>(b.begin(), b.end()) { }
+      |     ^~~~~~~
+bitcoinrpc.cpp: In function ‘json_spirit::Value getwork(const Array&, bool)’:
+bitcoinrpc.cpp:2092:78: warning: implicitly-declared ‘CScript& CScript::operator=(const CScript&)’ is deprecated [-Wdeprecated-copy]
+ 2092 |         pblock->vtx[0].vin[0].scriptSig = mapNewBlock[pdata->hashMerkleRoot].second;
+      |                                                                              ^~~~~~
+In file included from main.h:12,
+                 from bitcoinrpc.cpp:8:
+script.h:267:5: note: because ‘CScript’ has user-provided ‘CScript::CScript(const CScript&)’
+  267 |     CScript(const CScript& b) : std::vector<unsigned char>(b.begin(), b.end()) { }
+      |     ^~~~~~~
+In file included from bignum.h:13,
+                 from main.h:9,
+                 from wallet.h:9,
+                 from init.h:9,
+                 from rpcdump.cpp:6:
+util.h:192:22: warning: invalid suffix on literal; C++11 requires a space between literal and string macro [-Wliteral-suffix]
+  192 |     return strprintf("%"PRI64d, n);
+      |                      ^
+In file included from main.h:10,
+                 from wallet.h:9,
+                 from init.h:9,
+                 from rpcdump.cpp:6:
+net.h:320:20: warning: invalid suffix on literal; C++11 requires a space between literal and string macro [-Wliteral-suffix]
+  320 |             printf("askfor %s   %"PRI64d"\n", inv.ToString().c_str(), nRequestTime);
+      |                    ^
+In file included from wallet.h:9,
+                 from init.h:9,
+                 from rpcdump.cpp:6:
+main.h:374:26: warning: invalid suffix on literal; C++11 requires a space between literal and string macro [-Wliteral-suffix]
+  374 |         return strprintf("CTxOut(nValue=%"PRI64d".%08"PRI64d", scriptPubKey=%s)", nValue / COIN, nValue % COIN, scriptPubKey.ToString().substr(0,30).c_str());
+      |                          ^
+main.h:374:49: warning: invalid suffix on literal; C++11 requires a space between literal and string macro [-Wliteral-suffix]
+  374 |         return strprintf("CTxOut(nValue=%"PRI64d".%08"PRI64d", scriptPubKey=%s)", nValue / COIN, nValue % COIN, scriptPubKey.ToString().substr(0,30).c_str());
+      |                                                 ^
+main.h:1483:17: warning: invalid suffix on literal; C++11 requires a space between literal and string macro [-Wliteral-suffix]
+ 1483 |                 "    nRelayUntil  = %"PRI64d"\n"
+      |                 ^
+main.h:1484:17: warning: invalid suffix on literal; C++11 requires a space between literal and string macro [-Wliteral-suffix]
+ 1484 |                 "    nExpiration  = %"PRI64d"\n"
+      |                 ^
+In file included from wallet.h:9,
+                 from init.h:9,
+                 from rpcdump.cpp:6:
+main.h: In constructor ‘CTxIn::CTxIn(COutPoint, CScript, unsigned int)’:
+main.h:258:21: warning: implicitly-declared ‘CScript& CScript::operator=(const CScript&)’ is deprecated [-Wdeprecated-copy]
+  258 |         scriptSig = scriptSigIn;
+      |                     ^~~~~~~~~~~
+In file included from main.h:12,
+                 from wallet.h:9,
+                 from init.h:9,
+                 from rpcdump.cpp:6:
+script.h:267:5: note: because ‘CScript’ has user-provided ‘CScript::CScript(const CScript&)’
+  267 |     CScript(const CScript& b) : std::vector<unsigned char>(b.begin(), b.end()) { }
+      |     ^~~~~~~
+In file included from wallet.h:9,
+                 from init.h:9,
+                 from rpcdump.cpp:6:
+main.h: In constructor ‘CTxIn::CTxIn(uint256, unsigned int, CScript, unsigned int)’:
+main.h:265:21: warning: implicitly-declared ‘CScript& CScript::operator=(const CScript&)’ is deprecated [-Wdeprecated-copy]
+  265 |         scriptSig = scriptSigIn;
+      |                     ^~~~~~~~~~~
+In file included from main.h:12,
+                 from wallet.h:9,
+                 from init.h:9,
+                 from rpcdump.cpp:6:
+script.h:267:5: note: because ‘CScript’ has user-provided ‘CScript::CScript(const CScript&)’
+  267 |     CScript(const CScript& b) : std::vector<unsigned char>(b.begin(), b.end()) { }
+      |     ^~~~~~~
+In file included from wallet.h:9,
+                 from init.h:9,
+                 from rpcdump.cpp:6:
+main.h: In constructor ‘CTxOut::CTxOut(int64, CScript)’:
+main.h:334:24: warning: implicitly-declared ‘CScript& CScript::operator=(const CScript&)’ is deprecated [-Wdeprecated-copy]
+  334 |         scriptPubKey = scriptPubKeyIn;
+      |                        ^~~~~~~~~~~~~~
+In file included from main.h:12,
+                 from wallet.h:9,
+                 from init.h:9,
+                 from rpcdump.cpp:6:
+script.h:267:5: note: because ‘CScript’ has user-provided ‘CScript::CScript(const CScript&)’
+  267 |     CScript(const CScript& b) : std::vector<unsigned char>(b.begin(), b.end()) { }
+      |     ^~~~~~~
+In file included from bitcoinrpc.h:15,
+                 from rpcdump.cpp:7:
+json/json_spirit_writer_template.h: In function ‘String_type json_spirit::non_printable_to_string(unsigned int)’:
+json/json_spirit_writer_template.h:31:50: warning: typedef ‘Char_type’ locally defined but not used [-Wunused-local-typedefs]
+   31 |         typedef typename String_type::value_type Char_type;
+      |                                                  ^~~~~~~~~
+In file included from addrman.h:9,
+                 from net.h:21,
+                 from rpcnet.cpp:6:
+util.h:192:22: warning: invalid suffix on literal; C++11 requires a space between literal and string macro [-Wliteral-suffix]
+  192 |     return strprintf("%"PRI64d, n);
+      |                      ^
+In file included from rpcnet.cpp:6:
+net.h:320:20: warning: invalid suffix on literal; C++11 requires a space between literal and string macro [-Wliteral-suffix]
+  320 |             printf("askfor %s   %"PRI64d"\n", inv.ToString().c_str(), nRequestTime);
+      |                    ^
+rpcnet.cpp:52:50: warning: invalid suffix on literal; C++11 requires a space between literal and string macro [-Wliteral-suffix]
+   52 |         obj.push_back(Pair("services", strprintf("%08"PRI64x, stats.nServices)));
+      |                                                  ^
+In file included from bitcoinrpc.h:15,
+                 from rpcnet.cpp:7:
+json/json_spirit_writer_template.h: In function ‘String_type json_spirit::non_printable_to_string(unsigned int)’:
+json/json_spirit_writer_template.h:31:50: warning: typedef ‘Char_type’ locally defined but not used [-Wunused-local-typedefs]
+   31 |         typedef typename String_type::value_type Char_type;
+      |                                                  ^~~~~~~~~
+In file included from bignum.h:13,
+                 from base58.h:21,
+                 from rpcrawtransaction.cpp:8:
+util.h:192:22: warning: invalid suffix on literal; C++11 requires a space between literal and string macro [-Wliteral-suffix]
+  192 |     return strprintf("%"PRI64d, n);
+      |                      ^
+In file included from main.h:10,
+                 from db.h:9,
+                 from rpcrawtransaction.cpp:10:
+net.h:320:20: warning: invalid suffix on literal; C++11 requires a space between literal and string macro [-Wliteral-suffix]
+  320 |             printf("askfor %s   %"PRI64d"\n", inv.ToString().c_str(), nRequestTime);
+      |                    ^
+In file included from db.h:9,
+                 from rpcrawtransaction.cpp:10:
+main.h:374:26: warning: invalid suffix on literal; C++11 requires a space between literal and string macro [-Wliteral-suffix]
+  374 |         return strprintf("CTxOut(nValue=%"PRI64d".%08"PRI64d", scriptPubKey=%s)", nValue / COIN, nValue % COIN, scriptPubKey.ToString().substr(0,30).c_str());
+      |                          ^
+main.h:374:49: warning: invalid suffix on literal; C++11 requires a space between literal and string macro [-Wliteral-suffix]
+  374 |         return strprintf("CTxOut(nValue=%"PRI64d".%08"PRI64d", scriptPubKey=%s)", nValue / COIN, nValue % COIN, scriptPubKey.ToString().substr(0,30).c_str());
+      |                                                 ^
+main.h:1483:17: warning: invalid suffix on literal; C++11 requires a space between literal and string macro [-Wliteral-suffix]
+ 1483 |                 "    nRelayUntil  = %"PRI64d"\n"
+      |                 ^
+main.h:1484:17: warning: invalid suffix on literal; C++11 requires a space between literal and string macro [-Wliteral-suffix]
+ 1484 |                 "    nExpiration  = %"PRI64d"\n"
+      |                 ^
+In file included from bitcoinrpc.h:15,
+                 from rpcrawtransaction.cpp:9:
+json/json_spirit_writer_template.h: In function ‘String_type json_spirit::non_printable_to_string(unsigned int)’:
+json/json_spirit_writer_template.h:31:50: warning: typedef ‘Char_type’ locally defined but not used [-Wunused-local-typedefs]
+   31 |         typedef typename String_type::value_type Char_type;
+      |                                                  ^~~~~~~~~
+In file included from db.h:9,
+                 from rpcrawtransaction.cpp:10:
+main.h: In constructor ‘CTxIn::CTxIn(COutPoint, CScript, unsigned int)’:
+main.h:258:21: warning: implicitly-declared ‘CScript& CScript::operator=(const CScript&)’ is deprecated [-Wdeprecated-copy]
+  258 |         scriptSig = scriptSigIn;
+      |                     ^~~~~~~~~~~
+In file included from base58.h:23,
+                 from rpcrawtransaction.cpp:8:
+script.h:267:5: note: because ‘CScript’ has user-provided ‘CScript::CScript(const CScript&)’
+  267 |     CScript(const CScript& b) : std::vector<unsigned char>(b.begin(), b.end()) { }
+      |     ^~~~~~~
+In file included from db.h:9,
+                 from rpcrawtransaction.cpp:10:
+main.h: In constructor ‘CTxIn::CTxIn(uint256, unsigned int, CScript, unsigned int)’:
+main.h:265:21: warning: implicitly-declared ‘CScript& CScript::operator=(const CScript&)’ is deprecated [-Wdeprecated-copy]
+  265 |         scriptSig = scriptSigIn;
+      |                     ^~~~~~~~~~~
+In file included from base58.h:23,
+                 from rpcrawtransaction.cpp:8:
+script.h:267:5: note: because ‘CScript’ has user-provided ‘CScript::CScript(const CScript&)’
+  267 |     CScript(const CScript& b) : std::vector<unsigned char>(b.begin(), b.end()) { }
+      |     ^~~~~~~
+In file included from db.h:9,
+                 from rpcrawtransaction.cpp:10:
+main.h: In constructor ‘CTxOut::CTxOut(int64, CScript)’:
+main.h:334:24: warning: implicitly-declared ‘CScript& CScript::operator=(const CScript&)’ is deprecated [-Wdeprecated-copy]
+  334 |         scriptPubKey = scriptPubKeyIn;
+      |                        ^~~~~~~~~~~~~~
+In file included from base58.h:23,
+                 from rpcrawtransaction.cpp:8:
+script.h:267:5: note: because ‘CScript’ has user-provided ‘CScript::CScript(const CScript&)’
+  267 |     CScript(const CScript& b) : std::vector<unsigned char>(b.begin(), b.end()) { }
+      |     ^~~~~~~
+rpcrawtransaction.cpp: In function ‘json_spirit::Value signrawtransaction(const Array&, bool)’:
+rpcrawtransaction.cpp:336:92: warning: implicitly-declared ‘CScript& CScript::operator=(const CScript&)’ is deprecated [-Wdeprecated-copy]
+  336 |                 mapPrevOut[txin.prevout] = mapPrevTx[prevHash].second.vout[txin.prevout.n].scriptPubKey;
+      |                                                                                            ^~~~~~~~~~~~
+In file included from base58.h:23,
+                 from rpcrawtransaction.cpp:8:
+script.h:267:5: note: because ‘CScript’ has user-provided ‘CScript::CScript(const CScript&)’
+  267 |     CScript(const CScript& b) : std::vector<unsigned char>(b.begin(), b.end()) { }
+      |     ^~~~~~~
+rpcrawtransaction.cpp:382:40: warning: implicitly-declared ‘CScript& CScript::operator=(const CScript&)’ is deprecated [-Wdeprecated-copy]
+  382 |                 mapPrevOut[outpoint] = scriptPubKey;
+      |                                        ^~~~~~~~~~~~
+In file included from base58.h:23,
+                 from rpcrawtransaction.cpp:8:
+script.h:267:5: note: because ‘CScript’ has user-provided ‘CScript::CScript(const CScript&)’
+  267 |     CScript(const CScript& b) : std::vector<unsigned char>(b.begin(), b.end()) { }
+      |     ^~~~~~~
+rpcrawtransaction.cpp:443:109: warning: implicitly-declared ‘CScript& CScript::operator=(const CScript&)’ is deprecated [-Wdeprecated-copy]
+  443 |             txin.scriptSig = CombineSignatures(prevPubKey, mergedTx, i, txin.scriptSig, txv.vin[i].scriptSig);
+      |                                                                                                             ^
+In file included from base58.h:23,
+                 from rpcrawtransaction.cpp:8:
+script.h:267:5: note: because ‘CScript’ has user-provided ‘CScript::CScript(const CScript&)’
+  267 |     CScript(const CScript& b) : std::vector<unsigned char>(b.begin(), b.end()) { }
+      |     ^~~~~~~
+In file included from key.h:15,
+                 from crypter.h:9,
+                 from keystore.h:9,
+                 from script.h:15,
+                 from script.cpp:12:
+util.h:192:22: warning: invalid suffix on literal; C++11 requires a space between literal and string macro [-Wliteral-suffix]
+  192 |     return strprintf("%"PRI64d, n);
+      |                      ^
+In file included from main.h:10,
+                 from script.cpp:16:
+net.h:320:20: warning: invalid suffix on literal; C++11 requires a space between literal and string macro [-Wliteral-suffix]
+  320 |             printf("askfor %s   %"PRI64d"\n", inv.ToString().c_str(), nRequestTime);
+      |                    ^
+In file included from script.cpp:16:
+main.h:374:26: warning: invalid suffix on literal; C++11 requires a space between literal and string macro [-Wliteral-suffix]
+  374 |         return strprintf("CTxOut(nValue=%"PRI64d".%08"PRI64d", scriptPubKey=%s)", nValue / COIN, nValue % COIN, scriptPubKey.ToString().substr(0,30).c_str());
+      |                          ^
+main.h:374:49: warning: invalid suffix on literal; C++11 requires a space between literal and string macro [-Wliteral-suffix]
+  374 |         return strprintf("CTxOut(nValue=%"PRI64d".%08"PRI64d", scriptPubKey=%s)", nValue / COIN, nValue % COIN, scriptPubKey.ToString().substr(0,30).c_str());
+      |                                                 ^
+main.h:1483:17: warning: invalid suffix on literal; C++11 requires a space between literal and string macro [-Wliteral-suffix]
+ 1483 |                 "    nRelayUntil  = %"PRI64d"\n"
+      |                 ^
+main.h:1484:17: warning: invalid suffix on literal; C++11 requires a space between literal and string macro [-Wliteral-suffix]
+ 1484 |                 "    nExpiration  = %"PRI64d"\n"
+      |                 ^
+main.h: In constructor ‘CTxIn::CTxIn(COutPoint, CScript, unsigned int)’:
+main.h:258:21: warning: implicitly-declared ‘CScript& CScript::operator=(const CScript&)’ is deprecated [-Wdeprecated-copy]
+  258 |         scriptSig = scriptSigIn;
+      |                     ^~~~~~~~~~~
+In file included from script.cpp:12:
+script.h:267:5: note: because ‘CScript’ has user-provided ‘CScript::CScript(const CScript&)’
+  267 |     CScript(const CScript& b) : std::vector<unsigned char>(b.begin(), b.end()) { }
+      |     ^~~~~~~
+In file included from script.cpp:16:
+main.h: In constructor ‘CTxIn::CTxIn(uint256, unsigned int, CScript, unsigned int)’:
+main.h:265:21: warning: implicitly-declared ‘CScript& CScript::operator=(const CScript&)’ is deprecated [-Wdeprecated-copy]
+  265 |         scriptSig = scriptSigIn;
+      |                     ^~~~~~~~~~~
+In file included from script.cpp:12:
+script.h:267:5: note: because ‘CScript’ has user-provided ‘CScript::CScript(const CScript&)’
+  267 |     CScript(const CScript& b) : std::vector<unsigned char>(b.begin(), b.end()) { }
+      |     ^~~~~~~
+In file included from script.cpp:16:
+main.h: In constructor ‘CTxOut::CTxOut(int64, CScript)’:
+main.h:334:24: warning: implicitly-declared ‘CScript& CScript::operator=(const CScript&)’ is deprecated [-Wdeprecated-copy]
+  334 |         scriptPubKey = scriptPubKeyIn;
+      |                        ^~~~~~~~~~~~~~
+In file included from script.cpp:12:
+script.h:267:5: note: because ‘CScript’ has user-provided ‘CScript::CScript(const CScript&)’
+  267 |     CScript(const CScript& b) : std::vector<unsigned char>(b.begin(), b.end()) { }
+      |     ^~~~~~~
+script.cpp: In function ‘uint256 SignatureHash(CScript, const CTransaction&, unsigned int, int)’:
+script.cpp:1058:42: warning: implicitly-declared ‘CScript& CScript::operator=(const CScript&)’ is deprecated [-Wdeprecated-copy]
+ 1058 |         txTmp.vin[i].scriptSig = CScript();
+      |                                          ^
+In file included from script.cpp:12:
+script.h:267:5: note: because ‘CScript’ has user-provided ‘CScript::CScript(const CScript&)’
+  267 |     CScript(const CScript& b) : std::vector<unsigned char>(b.begin(), b.end()) { }
+      |     ^~~~~~~
+script.cpp:1059:32: warning: implicitly-declared ‘CScript& CScript::operator=(const CScript&)’ is deprecated [-Wdeprecated-copy]
+ 1059 |     txTmp.vin[nIn].scriptSig = scriptCode;
+      |                                ^~~~~~~~~~
+In file included from script.cpp:12:
+script.h:267:5: note: because ‘CScript’ has user-provided ‘CScript::CScript(const CScript&)’
+  267 |     CScript(const CScript& b) : std::vector<unsigned char>(b.begin(), b.end()) { }
+      |     ^~~~~~~
+In file included from script.cpp:16:
+main.h: In member function ‘CTxIn& CTxIn::operator=(const CTxIn&)’:
+main.h:243:7: warning: implicitly-declared ‘CScript& CScript::operator=(const CScript&)’ is deprecated [-Wdeprecated-copy]
+  243 | class CTxIn
+      |       ^~~~~
+In file included from script.cpp:12:
+script.h:267:5: note: because ‘CScript’ has user-provided ‘CScript::CScript(const CScript&)’
+  267 |     CScript(const CScript& b) : std::vector<unsigned char>(b.begin(), b.end()) { }
+      |     ^~~~~~~
+script.cpp: In function ‘uint256 SignatureHash(CScript, const CTransaction&, unsigned int, int)’:
+script.cpp:1094:37: note: synthesized method ‘CTxIn& CTxIn::operator=(const CTxIn&)’ first required here
+ 1094 |         txTmp.vin[0] = txTmp.vin[nIn];
+      |                                     ^
+In file included from sync.cpp:7:
+util.h:192:22: warning: invalid suffix on literal; C++11 requires a space between literal and string macro [-Wliteral-suffix]
+  192 |     return strprintf("%"PRI64d, n);
+      |                      ^
+In file included from util.cpp:7:
+util.h:192:22: warning: invalid suffix on literal; C++11 requires a space between literal and string macro [-Wliteral-suffix]
+  192 |     return strprintf("%"PRI64d, n);
+      |                      ^
+util.cpp:350:28: warning: invalid suffix on literal; C++11 requires a space between literal and string macro [-Wliteral-suffix]
+  350 |     string str = strprintf("%"PRI64d".%08"PRI64d, quotient, remainder);
+      |                            ^
+util.cpp:350:37: warning: invalid suffix on literal; C++11 requires a space between literal and string macro [-Wliteral-suffix]
+  350 |     string str = strprintf("%"PRI64d".%08"PRI64d, quotient, remainder);
+      |                                     ^
+util.cpp:1183:12: warning: invalid suffix on literal; C++11 requires a space between literal and string macro [-Wliteral-suffix]
+ 1183 |     printf("Added time data, samples %d, offset %+"PRI64d" (%+"PRI64d" minutes)\n", vTimeOffsets.size(), nOffsetSample, nOffsetSample/60);
+      |            ^
+util.cpp:1183:58: warning: invalid suffix on literal; C++11 requires a space between literal and string macro [-Wliteral-suffix]
+ 1183 |     printf("Added time data, samples %d, offset %+"PRI64d" (%+"PRI64d" minutes)\n", vTimeOffsets.size(), nOffsetSample, nOffsetSample/60);
+      |                                                          ^
+util.cpp:1218:24: warning: invalid suffix on literal; C++11 requires a space between literal and string macro [-Wliteral-suffix]
+ 1218 |                 printf("%+"PRI64d"  ", n);
+      |                        ^
+util.cpp:1221:16: warning: invalid suffix on literal; C++11 requires a space between literal and string macro [-Wliteral-suffix]
+ 1221 |         printf("nTimeOffset = %+"PRI64d"  (%+"PRI64d" minutes)\n", nTimeOffset, nTimeOffset/60);
+      |                ^
+util.cpp:1221:40: warning: invalid suffix on literal; C++11 requires a space between literal and string macro [-Wliteral-suffix]
+ 1221 |         printf("nTimeOffset = %+"PRI64d"  (%+"PRI64d" minutes)\n", nTimeOffset, nTimeOffset/60);
+      |                                        ^
+In file included from bignum.h:13,
+                 from main.h:9,
+                 from wallet.h:9,
+                 from wallet.cpp:7:
+util.h:192:22: warning: invalid suffix on literal; C++11 requires a space between literal and string macro [-Wliteral-suffix]
+  192 |     return strprintf("%"PRI64d, n);
+      |                      ^
+In file included from main.h:10,
+                 from wallet.h:9,
+                 from wallet.cpp:7:
+net.h:320:20: warning: invalid suffix on literal; C++11 requires a space between literal and string macro [-Wliteral-suffix]
+  320 |             printf("askfor %s   %"PRI64d"\n", inv.ToString().c_str(), nRequestTime);
+      |                    ^
+In file included from wallet.h:9,
+                 from wallet.cpp:7:
+main.h:374:26: warning: invalid suffix on literal; C++11 requires a space between literal and string macro [-Wliteral-suffix]
+  374 |         return strprintf("CTxOut(nValue=%"PRI64d".%08"PRI64d", scriptPubKey=%s)", nValue / COIN, nValue % COIN, scriptPubKey.ToString().substr(0,30).c_str());
+      |                          ^
+main.h:374:49: warning: invalid suffix on literal; C++11 requires a space between literal and string macro [-Wliteral-suffix]
+  374 |         return strprintf("CTxOut(nValue=%"PRI64d".%08"PRI64d", scriptPubKey=%s)", nValue / COIN, nValue % COIN, scriptPubKey.ToString().substr(0,30).c_str());
+      |                                                 ^
+main.h:1483:17: warning: invalid suffix on literal; C++11 requires a space between literal and string macro [-Wliteral-suffix]
+ 1483 |                 "    nRelayUntil  = %"PRI64d"\n"
+      |                 ^
+main.h:1484:17: warning: invalid suffix on literal; C++11 requires a space between literal and string macro [-Wliteral-suffix]
+ 1484 |                 "    nExpiration  = %"PRI64d"\n"
+      |                 ^
+wallet.cpp:1424:16: warning: invalid suffix on literal; C++11 requires a space between literal and string macro [-Wliteral-suffix]
+ 1424 |         printf("CWallet::NewKeyPool wrote %"PRI64d" new keys\n", nKeys);
+      |                ^
+wallet.cpp:1449:20: warning: invalid suffix on literal; C++11 requires a space between literal and string macro [-Wliteral-suffix]
+ 1449 |             printf("keypool added key %"PRI64d", size=%d\n", nEnd, setKeyPool.size());
+      |                    ^
+wallet.cpp:1478:16: warning: invalid suffix on literal; C++11 requires a space between literal and string macro [-Wliteral-suffix]
+ 1478 |         printf("keypool reserve %"PRI64d"\n", nIndex);
+      |                ^
+wallet.cpp:1505:12: warning: invalid suffix on literal; C++11 requires a space between literal and string macro [-Wliteral-suffix]
+ 1505 |     printf("keypool keep %"PRI64d"\n", nIndex);
+      |            ^
+wallet.cpp:1515:12: warning: invalid suffix on literal; C++11 requires a space between literal and string macro [-Wliteral-suffix]
+ 1515 |     printf("keypool return %"PRI64d"\n", nIndex);
+      |            ^
+In file included from wallet.h:9,
+                 from wallet.cpp:7:
+main.h: In constructor ‘CTxIn::CTxIn(COutPoint, CScript, unsigned int)’:
+main.h:258:21: warning: implicitly-declared ‘CScript& CScript::operator=(const CScript&)’ is deprecated [-Wdeprecated-copy]
+  258 |         scriptSig = scriptSigIn;
+      |                     ^~~~~~~~~~~
+In file included from main.h:12,
+                 from wallet.h:9,
+                 from wallet.cpp:7:
+script.h:267:5: note: because ‘CScript’ has user-provided ‘CScript::CScript(const CScript&)’
+  267 |     CScript(const CScript& b) : std::vector<unsigned char>(b.begin(), b.end()) { }
+      |     ^~~~~~~
+In file included from wallet.h:9,
+                 from wallet.cpp:7:
+main.h: In constructor ‘CTxIn::CTxIn(uint256, unsigned int, CScript, unsigned int)’:
+main.h:265:21: warning: implicitly-declared ‘CScript& CScript::operator=(const CScript&)’ is deprecated [-Wdeprecated-copy]
+  265 |         scriptSig = scriptSigIn;
+      |                     ^~~~~~~~~~~
+In file included from main.h:12,
+                 from wallet.h:9,
+                 from wallet.cpp:7:
+script.h:267:5: note: because ‘CScript’ has user-provided ‘CScript::CScript(const CScript&)’
+  267 |     CScript(const CScript& b) : std::vector<unsigned char>(b.begin(), b.end()) { }
+      |     ^~~~~~~
+In file included from wallet.h:9,
+                 from wallet.cpp:7:
+main.h: In constructor ‘CTxOut::CTxOut(int64, CScript)’:
+main.h:334:24: warning: implicitly-declared ‘CScript& CScript::operator=(const CScript&)’ is deprecated [-Wdeprecated-copy]
+  334 |         scriptPubKey = scriptPubKeyIn;
+      |                        ^~~~~~~~~~~~~~
+In file included from main.h:12,
+                 from wallet.h:9,
+                 from wallet.cpp:7:
+script.h:267:5: note: because ‘CScript’ has user-provided ‘CScript::CScript(const CScript&)’
+  267 |     CScript(const CScript& b) : std::vector<unsigned char>(b.begin(), b.end()) { }
+      |     ^~~~~~~
+In file included from wallet.h:9,
+                 from wallet.cpp:7:
+main.h: In instantiation of ‘void std::vector<_Tp, _Alloc>::_M_insert_aux(std::vector<_Tp, _Alloc>::iterator, _Arg&&) [with _Arg = CTxOut; _Tp = CTxOut; _Alloc = std::allocator<CTxOut>; std::vector<_Tp, _Alloc>::iterator = __gnu_cxx::__normal_iterator<CTxOut*, std::vector<CTxOut> >; typename std::_Vector_base<_Tp, _Alloc>::pointer = CTxOut*]’:
+/usr/include/c++/9/bits/vector.tcc:354:4:   required from ‘std::vector<_Tp, _Alloc>::iterator std::vector<_Tp, _Alloc>::_M_insert_rval(std::vector<_Tp, _Alloc>::const_iterator, std::vector<_Tp, _Alloc>::value_type&&) [with _Tp = CTxOut; _Alloc = std::allocator<CTxOut>; std::vector<_Tp, _Alloc>::iterator = __gnu_cxx::__normal_iterator<CTxOut*, std::vector<CTxOut> >; typename std::_Vector_base<_Tp, _Alloc>::pointer = CTxOut*; std::vector<_Tp, _Alloc>::const_iterator = __gnu_cxx::__normal_iterator<const CTxOut*, std::vector<CTxOut> >; typename __gnu_cxx::__alloc_traits<typename std::_Vector_base<_Tp, _Alloc>::_Tp_alloc_type>::const_pointer = const CTxOut*; std::vector<_Tp, _Alloc>::value_type = CTxOut]’
+/usr/include/c++/9/bits/stl_vector.h:1291:16:   required from ‘std::vector<_Tp, _Alloc>::iterator std::vector<_Tp, _Alloc>::insert(std::vector<_Tp, _Alloc>::const_iterator, std::vector<_Tp, _Alloc>::value_type&&) [with _Tp = CTxOut; _Alloc = std::allocator<CTxOut>; std::vector<_Tp, _Alloc>::iterator = __gnu_cxx::__normal_iterator<CTxOut*, std::vector<CTxOut> >; typename std::_Vector_base<_Tp, _Alloc>::pointer = CTxOut*; std::vector<_Tp, _Alloc>::const_iterator = __gnu_cxx::__normal_iterator<const CTxOut*, std::vector<CTxOut> >; typename __gnu_cxx::__alloc_traits<typename std::_Vector_base<_Tp, _Alloc>::_Tp_alloc_type>::const_pointer = const CTxOut*; std::vector<_Tp, _Alloc>::value_type = CTxOut]’
+wallet.cpp:1156:79:   required from here
+main.h:320:7: warning: implicitly-declared ‘CScript& CScript::operator=(const CScript&)’ is deprecated [-Wdeprecated-copy]
+  320 | class CTxOut
+      |       ^~~~~~
+In file included from main.h:12,
+                 from wallet.h:9,
+                 from wallet.cpp:7:
+script.h:267:5: note: because ‘CScript’ has user-provided ‘CScript::CScript(const CScript&)’
+  267 |     CScript(const CScript& b) : std::vector<unsigned char>(b.begin(), b.end()) { }
+      |     ^~~~~~~
+In file included from /usr/include/c++/9/vector:72,
+                 from bignum.h:10,
+                 from main.h:9,
+                 from wallet.h:9,
+                 from wallet.cpp:7:
+/usr/include/c++/9/bits/vector.tcc:418:19: note: synthesized method ‘CTxOut& CTxOut::operator=(CTxOut&&)’ first required here
+  418 |       *__position = std::forward<_Arg>(__arg);
+      |       ~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~
+In file included from wallet.h:9,
+                 from wallet.cpp:7:
+main.h: In instantiation of ‘static _OI std::__copy_move<false, false, std::random_access_iterator_tag>::__copy_m(_II, _II, _OI) [with _II = const CTxIn*; _OI = CTxIn*]’:
+/usr/include/c++/9/bits/stl_algobase.h:404:30:   required from ‘_OI std::__copy_move_a(_II, _II, _OI) [with bool _IsMove = false; _II = const CTxIn*; _OI = CTxIn*]’
+/usr/include/c++/9/bits/stl_algobase.h:441:30:   required from ‘_OI std::__copy_move_a2(_II, _II, _OI) [with bool _IsMove = false; _II = __gnu_cxx::__normal_iterator<const CTxIn*, std::vector<CTxIn> >; _OI = __gnu_cxx::__normal_iterator<CTxIn*, std::vector<CTxIn> >]’
+/usr/include/c++/9/bits/stl_algobase.h:474:7:   required from ‘_OI std::copy(_II, _II, _OI) [with _II = __gnu_cxx::__normal_iterator<const CTxIn*, std::vector<CTxIn> >; _OI = __gnu_cxx::__normal_iterator<CTxIn*, std::vector<CTxIn> >]’
+/usr/include/c++/9/bits/vector.tcc:238:31:   required from ‘std::vector<_Tp, _Alloc>& std::vector<_Tp, _Alloc>::operator=(const std::vector<_Tp, _Alloc>&) [with _Tp = CTxIn; _Alloc = std::allocator<CTxIn>]’
+main.h:398:7:   required from here
+main.h:243:7: warning: implicitly-declared ‘CScript& CScript::operator=(const CScript&)’ is deprecated [-Wdeprecated-copy]
+  243 | class CTxIn
+      |       ^~~~~
+In file included from main.h:12,
+                 from wallet.h:9,
+                 from wallet.cpp:7:
+script.h:267:5: note: because ‘CScript’ has user-provided ‘CScript::CScript(const CScript&)’
+  267 |     CScript(const CScript& b) : std::vector<unsigned char>(b.begin(), b.end()) { }
+      |     ^~~~~~~
+In file included from /usr/include/c++/9/bits/char_traits.h:39,
+                 from /usr/include/c++/9/string:40,
+                 from /usr/include/c++/9/stdexcept:39,
+                 from bignum.h:9,
+                 from main.h:9,
+                 from wallet.h:9,
+                 from wallet.cpp:7:
+/usr/include/c++/9/bits/stl_algobase.h:342:18: note: synthesized method ‘CTxIn& CTxIn::operator=(const CTxIn&)’ first required here
+  342 |        *__result = *__first;
+      |        ~~~~~~~~~~^~~~~~~~~~
+In file included from wallet.h:9,
+                 from wallet.cpp:7:
+main.h: In instantiation of ‘static _OI std::__copy_move<false, false, std::random_access_iterator_tag>::__copy_m(_II, _II, _OI) [with _II = const CTxOut*; _OI = CTxOut*]’:
+/usr/include/c++/9/bits/stl_algobase.h:404:30:   required from ‘_OI std::__copy_move_a(_II, _II, _OI) [with bool _IsMove = false; _II = const CTxOut*; _OI = CTxOut*]’
+/usr/include/c++/9/bits/stl_algobase.h:441:30:   required from ‘_OI std::__copy_move_a2(_II, _II, _OI) [with bool _IsMove = false; _II = __gnu_cxx::__normal_iterator<const CTxOut*, std::vector<CTxOut> >; _OI = __gnu_cxx::__normal_iterator<CTxOut*, std::vector<CTxOut> >]’
+/usr/include/c++/9/bits/stl_algobase.h:474:7:   required from ‘_OI std::copy(_II, _II, _OI) [with _II = __gnu_cxx::__normal_iterator<const CTxOut*, std::vector<CTxOut> >; _OI = __gnu_cxx::__normal_iterator<CTxOut*, std::vector<CTxOut> >]’
+/usr/include/c++/9/bits/vector.tcc:238:31:   required from ‘std::vector<_Tp, _Alloc>& std::vector<_Tp, _Alloc>::operator=(const std::vector<_Tp, _Alloc>&) [with _Tp = CTxOut; _Alloc = std::allocator<CTxOut>]’
+main.h:398:7:   required from here
+main.h:320:7: warning: implicitly-declared ‘CScript& CScript::operator=(const CScript&)’ is deprecated [-Wdeprecated-copy]
+  320 | class CTxOut
+      |       ^~~~~~
+In file included from main.h:12,
+                 from wallet.h:9,
+                 from wallet.cpp:7:
+script.h:267:5: note: because ‘CScript’ has user-provided ‘CScript::CScript(const CScript&)’
+  267 |     CScript(const CScript& b) : std::vector<unsigned char>(b.begin(), b.end()) { }
+      |     ^~~~~~~
+In file included from /usr/include/c++/9/bits/char_traits.h:39,
+                 from /usr/include/c++/9/string:40,
+                 from /usr/include/c++/9/stdexcept:39,
+                 from bignum.h:9,
+                 from main.h:9,
+                 from wallet.h:9,
+                 from wallet.cpp:7:
+/usr/include/c++/9/bits/stl_algobase.h:342:18: note: synthesized method ‘CTxOut& CTxOut::operator=(const CTxOut&)’ first required here
+  342 |        *__result = *__first;
+      |        ~~~~~~~~~~^~~~~~~~~~
+In file included from bignum.h:13,
+                 from main.h:9,
+                 from db.h:9,
+                 from walletdb.h:9,
+                 from walletdb.cpp:7:
+util.h:192:22: warning: invalid suffix on literal; C++11 requires a space between literal and string macro [-Wliteral-suffix]
+  192 |     return strprintf("%"PRI64d, n);
+      |                      ^
+In file included from main.h:10,
+                 from db.h:9,
+                 from walletdb.h:9,
+                 from walletdb.cpp:7:
+net.h:320:20: warning: invalid suffix on literal; C++11 requires a space between literal and string macro [-Wliteral-suffix]
+  320 |             printf("askfor %s   %"PRI64d"\n", inv.ToString().c_str(), nRequestTime);
+      |                    ^
+In file included from db.h:9,
+                 from walletdb.h:9,
+                 from walletdb.cpp:7:
+main.h:374:26: warning: invalid suffix on literal; C++11 requires a space between literal and string macro [-Wliteral-suffix]
+  374 |         return strprintf("CTxOut(nValue=%"PRI64d".%08"PRI64d", scriptPubKey=%s)", nValue / COIN, nValue % COIN, scriptPubKey.ToString().substr(0,30).c_str());
+      |                          ^
+main.h:374:49: warning: invalid suffix on literal; C++11 requires a space between literal and string macro [-Wliteral-suffix]
+  374 |         return strprintf("CTxOut(nValue=%"PRI64d".%08"PRI64d", scriptPubKey=%s)", nValue / COIN, nValue % COIN, scriptPubKey.ToString().substr(0,30).c_str());
+      |                                                 ^
+main.h:1483:17: warning: invalid suffix on literal; C++11 requires a space between literal and string macro [-Wliteral-suffix]
+ 1483 |                 "    nRelayUntil  = %"PRI64d"\n"
+      |                 ^
+main.h:1484:17: warning: invalid suffix on literal; C++11 requires a space between literal and string macro [-Wliteral-suffix]
+ 1484 |                 "    nExpiration  = %"PRI64d"\n"
+      |                 ^
+walletdb.cpp:379:32: warning: invalid suffix on literal; C++11 requires a space between literal and string macro [-Wliteral-suffix]
+  379 |                         printf("Flushed wallet.dat %"PRI64d"ms\n", GetTimeMillis() - nStart);
+      |                                ^
+In file included from db.h:9,
+                 from walletdb.h:9,
+                 from walletdb.cpp:7:
+main.h: In constructor ‘CTxIn::CTxIn(COutPoint, CScript, unsigned int)’:
+main.h:258:21: warning: implicitly-declared ‘CScript& CScript::operator=(const CScript&)’ is deprecated [-Wdeprecated-copy]
+  258 |         scriptSig = scriptSigIn;
+      |                     ^~~~~~~~~~~
+In file included from main.h:12,
+                 from db.h:9,
+                 from walletdb.h:9,
+                 from walletdb.cpp:7:
+script.h:267:5: note: because ‘CScript’ has user-provided ‘CScript::CScript(const CScript&)’
+  267 |     CScript(const CScript& b) : std::vector<unsigned char>(b.begin(), b.end()) { }
+      |     ^~~~~~~
+In file included from db.h:9,
+                 from walletdb.h:9,
+                 from walletdb.cpp:7:
+main.h: In constructor ‘CTxIn::CTxIn(uint256, unsigned int, CScript, unsigned int)’:
+main.h:265:21: warning: implicitly-declared ‘CScript& CScript::operator=(const CScript&)’ is deprecated [-Wdeprecated-copy]
+  265 |         scriptSig = scriptSigIn;
+      |                     ^~~~~~~~~~~
+In file included from main.h:12,
+                 from db.h:9,
+                 from walletdb.h:9,
+                 from walletdb.cpp:7:
+script.h:267:5: note: because ‘CScript’ has user-provided ‘CScript::CScript(const CScript&)’
+  267 |     CScript(const CScript& b) : std::vector<unsigned char>(b.begin(), b.end()) { }
+      |     ^~~~~~~
+In file included from db.h:9,
+                 from walletdb.h:9,
+                 from walletdb.cpp:7:
+main.h: In constructor ‘CTxOut::CTxOut(int64, CScript)’:
+main.h:334:24: warning: implicitly-declared ‘CScript& CScript::operator=(const CScript&)’ is deprecated [-Wdeprecated-copy]
+  334 |         scriptPubKey = scriptPubKeyIn;
+      |                        ^~~~~~~~~~~~~~
+In file included from main.h:12,
+                 from db.h:9,
+                 from walletdb.h:9,
+                 from walletdb.cpp:7:
+script.h:267:5: note: because ‘CScript’ has user-provided ‘CScript::CScript(const CScript&)’
+  267 |     CScript(const CScript& b) : std::vector<unsigned char>(b.begin(), b.end()) { }
+      |     ^~~~~~~
+In file included from ui_interface.h:10,
+                 from noui.cpp:6:
+util.h:192:22: warning: invalid suffix on literal; C++11 requires a space between literal and string macro [-Wliteral-suffix]
+  192 |     return strprintf("%"PRI64d, n);
+      |                      ^
+In file included from main.h:10,
+                 from wallet.h:9,
+                 from init.h:9,
+                 from noui.cpp:7:
+net.h:320:20: warning: invalid suffix on literal; C++11 requires a space between literal and string macro [-Wliteral-suffix]
+  320 |             printf("askfor %s   %"PRI64d"\n", inv.ToString().c_str(), nRequestTime);
+      |                    ^
+In file included from wallet.h:9,
+                 from init.h:9,
+                 from noui.cpp:7:
+main.h:374:26: warning: invalid suffix on literal; C++11 requires a space between literal and string macro [-Wliteral-suffix]
+  374 |         return strprintf("CTxOut(nValue=%"PRI64d".%08"PRI64d", scriptPubKey=%s)", nValue / COIN, nValue % COIN, scriptPubKey.ToString().substr(0,30).c_str());
+      |                          ^
+main.h:374:49: warning: invalid suffix on literal; C++11 requires a space between literal and string macro [-Wliteral-suffix]
+  374 |         return strprintf("CTxOut(nValue=%"PRI64d".%08"PRI64d", scriptPubKey=%s)", nValue / COIN, nValue % COIN, scriptPubKey.ToString().substr(0,30).c_str());
+      |                                                 ^
+main.h:1483:17: warning: invalid suffix on literal; C++11 requires a space between literal and string macro [-Wliteral-suffix]
+ 1483 |                 "    nRelayUntil  = %"PRI64d"\n"
+      |                 ^
+main.h:1484:17: warning: invalid suffix on literal; C++11 requires a space between literal and string macro [-Wliteral-suffix]
+ 1484 |                 "    nExpiration  = %"PRI64d"\n"
+      |                 ^
+In file included from wallet.h:9,
+                 from init.h:9,
+                 from noui.cpp:7:
+main.h: In constructor ‘CTxIn::CTxIn(COutPoint, CScript, unsigned int)’:
+main.h:258:21: warning: implicitly-declared ‘CScript& CScript::operator=(const CScript&)’ is deprecated [-Wdeprecated-copy]
+  258 |         scriptSig = scriptSigIn;
+      |                     ^~~~~~~~~~~
+In file included from main.h:12,
+                 from wallet.h:9,
+                 from init.h:9,
+                 from noui.cpp:7:
+script.h:267:5: note: because ‘CScript’ has user-provided ‘CScript::CScript(const CScript&)’
+  267 |     CScript(const CScript& b) : std::vector<unsigned char>(b.begin(), b.end()) { }
+      |     ^~~~~~~
+In file included from wallet.h:9,
+                 from init.h:9,
+                 from noui.cpp:7:
+main.h: In constructor ‘CTxIn::CTxIn(uint256, unsigned int, CScript, unsigned int)’:
+main.h:265:21: warning: implicitly-declared ‘CScript& CScript::operator=(const CScript&)’ is deprecated [-Wdeprecated-copy]
+  265 |         scriptSig = scriptSigIn;
+      |                     ^~~~~~~~~~~
+In file included from main.h:12,
+                 from wallet.h:9,
+                 from init.h:9,
+                 from noui.cpp:7:
+script.h:267:5: note: because ‘CScript’ has user-provided ‘CScript::CScript(const CScript&)’
+  267 |     CScript(const CScript& b) : std::vector<unsigned char>(b.begin(), b.end()) { }
+      |     ^~~~~~~
+In file included from wallet.h:9,
+                 from init.h:9,
+                 from noui.cpp:7:
+main.h: In constructor ‘CTxOut::CTxOut(int64, CScript)’:
+main.h:334:24: warning: implicitly-declared ‘CScript& CScript::operator=(const CScript&)’ is deprecated [-Wdeprecated-copy]
+  334 |         scriptPubKey = scriptPubKeyIn;
+      |                        ^~~~~~~~~~~~~~
+In file included from main.h:12,
+                 from wallet.h:9,
+                 from init.h:9,
+                 from noui.cpp:7:
+script.h:267:5: note: because ‘CScript’ has user-provided ‘CScript::CScript(const CScript&)’
+  267 |     CScript(const CScript& b) : std::vector<unsigned char>(b.begin(), b.end()) { }
+      |     ^~~~~~~
+In file included from bitcoinrpc.h:15,
+                 from noui.cpp:8:
+json/json_spirit_writer_template.h: In function ‘String_type json_spirit::non_printable_to_string(unsigned int)’:
+json/json_spirit_writer_template.h:31:50: warning: typedef ‘Char_type’ locally defined but not used [-Wunused-local-typedefs]
+   31 |         typedef typename String_type::value_type Char_type;
+      |                                                  ^~~~~~~~~

@@ -31,3 +31,8 @@ Lovely, they line up and each have a single connection. Now we can make one of t
 ```
 ./puffcoind setgenerate true 16
 ```
+
+## Windows
+MinGW32:
+mingw32-make.exe 
+about: https://bitcointalksearch.org/topic/how-to-create-your-own-digital-currency-get-paid-420896 
